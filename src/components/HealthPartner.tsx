@@ -25,8 +25,8 @@ const HealthPartner = () => {
             tailles et les indépendants.
           </p>
           <Flex>
-            <Button bg="black">Comparer les offres</Button>
-            <Button>Contacter l'équipe</Button>
+            <Button bg="black" margin="10px" >Comparer les offres</Button>
+            <Button margin="10px">Contacter l'équipe</Button>
           </Flex>
         </div>
         <div>

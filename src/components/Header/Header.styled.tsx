@@ -11,7 +11,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fcfcfc;
+  background-color: ${({theme}) => theme.colors.header};
   padding: 20px 20px;
 
   @media (max-width: 950px) {
@@ -45,7 +45,7 @@ export const Item = styled.div`
 export const Link = styled.a<ILink>`
   font-size: 16px;
   text-decoration: none;
-  color: ${({ color }) => (color === "grey" ? "#ACABAC" : "black")};
+  color: ${({ color, theme }) => (color === "grey" ? theme.colors.black_400 : "black")};
   font-weight: ${({ font }) => (font === "bold" ? "700" : "400")};
 `;
 
