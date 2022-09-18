@@ -11,9 +11,9 @@ const HealthPartner = () => {
     <Container>
       <Flex>
         <div>
-          <Heading font="48px">
-            Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
-            salariés
+          <Heading padding="0 40px 0 0">
+            <h2>Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
+            salariés</h2>
           </Heading>
           <p>
             De l’assurance santé à la prévention personnalisée en passant par sa

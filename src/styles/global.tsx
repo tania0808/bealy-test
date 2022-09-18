@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import Trenda from './Trenda.woff'
-import Gilroy from './Gilroy.woff'
+import Trenda from "./Trenda.woff";
+import Gilroy from "./Gilroy.woff";
+
 const GlobalStyles = createGlobalStyle`
 
 @font-face {
@@ -26,6 +27,29 @@ const GlobalStyles = createGlobalStyle`
     p, a, button {
         font-family: 'Trenda';
     }
+
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+
+    @media (max-width: 950px) {
+        h2 {
+        font-size: 36px;
+        }
+        h5 {
+            font-size: 18px;
+        }
+  }
+    
  `;
 
 export default GlobalStyles;

@@ -1,12 +1,31 @@
 import styled from "styled-components";
 
 interface IHeading {
-  font?: string;
+  align?: string;
+  padding?: string;
 }
 
-export const Heading = styled.h2<IHeading>`
-  font-weight: 700;
-  font-size: ${({ font }) => (font ? font : '32px')};
+export const Heading = styled.div<IHeading>`
+  text-align: ${({ align }) => (align ? align : "0")};
   line-height: 56px;
-  padding-right: 30px;
+  padding: ${({ padding }) => (padding ? padding : "0")};
+  font-weight: 700;
+   &>* {
+    font-weight: 700;
+   }
+  & > h2 {
+    font-size: 46px;
+  }
+  & > h3 {
+    font-size: 36px;
+  }
+  & > h4 {
+    font-size: 32px;
+  }
+  & > h5 {
+    font-size: 24px;
+  }
+  @media (max-width: 950px) {
+    padding: 0;
+  }
 `;

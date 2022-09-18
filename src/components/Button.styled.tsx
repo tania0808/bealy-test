@@ -12,6 +12,7 @@ export const Button = styled.button<Button>`
   padding: 16px 24px;
   font-weight: 600;
   margin-top: ${({ margin }) => margin || 0};
+  background-color: #fff;
 
   @media (max-width: 950px) {
     width: 100%;
