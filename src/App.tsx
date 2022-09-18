@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Home from "./Home";
+import GlobalStyles from "./styles/global";
 
 function App() {
-
   return (
-    <div className="App">
-      
-    </div>
-  )
+    <>
+      <GlobalStyles />
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
