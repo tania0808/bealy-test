@@ -39,10 +39,9 @@ export default function OfferCard({
 }
 
 const Image = styled.div`
-  text-align: center;
+display: flex;
   height: 230px;
   & > img {
-    padding: 56px 0;
     width: 50%;
     margin: 0 auto;
   }
@@ -61,11 +60,6 @@ const OfferCardS = styled.div`
 
   padding: 0 24px;
 
-  & > img {
-    width: 50%;
-    margin: 0 auto;
-    padding: 56px 0;
-  }
 
   & > span {
     height: 1px;
