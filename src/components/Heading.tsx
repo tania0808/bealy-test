@@ -12,6 +12,7 @@ export const Heading = styled.div<IHeading>`
   font-weight: 700;
   &>p {
     color: ${({theme}) => theme.colors.black_600};
+    line-height: 21px;
   }
    &>* {
     font-weight: 700;
@@ -24,6 +25,7 @@ export const Heading = styled.div<IHeading>`
   }
   & > h4 {
     font-size: 32px;
+    margin-bottom: 16px;
   }
   & > h5 {
     font-size: 24px;

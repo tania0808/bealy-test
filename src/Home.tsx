@@ -8,6 +8,7 @@ import ProSection from "./components/ProAdvantages/ProSection";
 import EmployeeEquipment from "./components/EmployeeEquipment";
 import OfferTargets from "./components/OfferTargets/OfferTargets";
 import TechPower from "./components/TechPower";
+import VirtualClinic from "./components/VirtualClinic";
 const Home: React.FunctionComponent = (props) => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home: React.FunctionComponent = (props) => {
       <EmployeeEquipment/>
       <OfferTargets/>
       <TechPower/>
+      <VirtualClinic/>
     </>
   );
 };
