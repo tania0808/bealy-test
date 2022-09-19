@@ -32,7 +32,6 @@ export const Flex = styled.div<IFlex>`
   @media (max-width: 950px) {
     flex-direction: column;
     &>div {
-    padding: 0 10px;
     flex: 1;
     
     p {

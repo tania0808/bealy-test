@@ -39,4 +39,7 @@ const ProSectionS = styled.section`
       grid-row-gap: 24px;
     }
   }
+  @media (max-width: 950px) {
+     padding: 56px 25px;
+    }
 `;

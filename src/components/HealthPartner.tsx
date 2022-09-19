@@ -11,7 +11,7 @@ const HealthPartner = () => {
     <ContainerS>
       <Flex>
         <div>
-          <Heading padding="0 40px 0 0">
+          <Heading>
             <h2>Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
             salariés</h2>
           </Heading>

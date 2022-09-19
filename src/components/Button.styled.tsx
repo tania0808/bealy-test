@@ -15,7 +15,8 @@ export const Button = styled.button<Button>`
   margin: ${({ margin }) => margin || 0};
   background-color: ${({ bg }) => bg || "#fff"};
   color: ${({ color, theme }) => color || theme.colors.button};
-
+display: flex;
+align-items: center;
   & > img {
     padding-left: 11px;
   }

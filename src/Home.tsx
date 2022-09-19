@@ -11,6 +11,9 @@ import TechPower from "./components/TechPower";
 import VirtualClinic from "./components/VirtualClinic";
 import HealthAssistanceDesktop from "./components/HealthAssistance/HealthAssistanceDesktop";
 import HealthAssistanceMobile from "./components/HealthAssistance/HealthAssistanceMobile";
+import InscriptionStepsDesktop from './components/InscriptionSteps/InscriptionStepsDesktop'
+import InscriptionStepsMobile from './components/InscriptionSteps/InscriptionStepsMobile'
+
 const Home: React.FunctionComponent = (props) => {
   return (
     <>
@@ -27,6 +30,8 @@ const Home: React.FunctionComponent = (props) => {
       <VirtualClinic/>
       <HealthAssistanceDesktop/>
       <HealthAssistanceMobile/>
+      <InscriptionStepsDesktop/>
+      <InscriptionStepsMobile/>
     </>
   );
 };
