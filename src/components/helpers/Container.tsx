@@ -12,6 +12,7 @@ export const ContainerS = styled.div<IContainer>`
   margin: ${({ margin }) => (margin ? margin : "0 auto")};
 
   @media (max-width: 950px) {
+    width: 435px;
     max-width: 435px;
   }
 `;

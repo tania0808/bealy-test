@@ -33,5 +33,16 @@ export const Heading = styled.div<IHeading>`
   @media (max-width: 950px) {
     padding: 0;
     text-align: ${({ align }) => (align ? align : "start")};
+
+    & > h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 28px;
+  }
+    & > h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    line-height: 42px;
+  }
   }
 `;

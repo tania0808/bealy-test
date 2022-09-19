@@ -17,7 +17,8 @@ export const Flex = styled.div<IFlex>`
 
     & > img {
       object-fit: contain;
-      width: 510px;
+      max-width: 510px;
+      width: 100%;
       padding: ${({padding}) => padding ? padding : '0'};
     }
     

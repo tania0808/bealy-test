@@ -49,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
         h2 {
         font-size: 36px;
         }
+        h4 {
+            font-size: 24px;
+        }
         h5 {
             font-size: 18px;
         }

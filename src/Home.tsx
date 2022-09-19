@@ -9,7 +9,8 @@ import EmployeeEquipment from "./components/EmployeeEquipment";
 import OfferTargets from "./components/OfferTargets/OfferTargets";
 import TechPower from "./components/TechPower";
 import VirtualClinic from "./components/VirtualClinic";
-import HealthAssistance from "./components/HealthAssistanceDesktop/HealthAssistance";
+import HealthAssistanceDesktop from "./components/HealthAssistance/HealthAssistanceDesktop";
+import HealthAssistanceMobile from "./components/HealthAssistance/HealthAssistanceMobile";
 const Home: React.FunctionComponent = (props) => {
   return (
     <>
@@ -24,7 +25,8 @@ const Home: React.FunctionComponent = (props) => {
       <OfferTargets/>
       <TechPower/>
       <VirtualClinic/>
-      <HealthAssistance/>
+      <HealthAssistanceDesktop/>
+      <HealthAssistanceMobile/>
     </>
   );
 };

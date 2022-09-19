@@ -1,10 +1,9 @@
-import phoneXCard from '../assets/phoneXCard.svg'
-import { Flex } from './helpers/Flex.styled'
+import phoneXCard from "../assets/phoneXCard.svg";
+import { Flex } from "./helpers/Flex.styled";
 import { ContainerS } from "./helpers/Container";
-import { Image } from "./Image.styled";
-
 import { Heading } from "./Heading";
 import { Button } from "./Button.styled";
+import styled from "styled-components";
 
 export default function EmployeeEquipment() {
   return (
@@ -15,16 +14,29 @@ export default function EmployeeEquipment() {
             <h2>Équipez vos salariés, en moins de 10 minutes !</h2>
           </Heading>
           <p>
-          Entrez votre RIB, votre numéro et signez votre contrat en ligne ! L’accès à la santé n’a jamais été aussi simple
+            Entrez votre RIB, votre numéro et signez votre contrat en ligne !
+            L’accès à la santé n’a jamais été aussi simple
           </p>
           <Flex>
-            <Button bg="black" color="#fff">Ouvrir un compte entreprise</Button>
+            <Button bg="black" color="#fff">
+              Ouvrir un compte entreprise
+            </Button>
           </Flex>
         </div>
-        <div>
-          <Image src={phoneXCard} />
-        </div>
+        <Image>
+          <img src={phoneXCard} alt="phoneXCard" />
+        </Image>
       </Flex>
     </ContainerS>
-  )
+  );
 }
+const Image = styled.div`
+  max-width: 100%;
+  margin: 40px 0 64px;
+
+  & > img {
+    width: 100%;
+
+    margin: 0 auto;
+  }
+`;
