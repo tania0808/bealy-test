@@ -15,10 +15,12 @@ export const Button = styled.button<Button>`
   margin: ${({ margin }) => margin || 0};
   background-color: ${({ bg }) => bg || "#fff"};
   color: ${({ color, theme }) => color || theme.colors.button};
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   & > img {
     padding-left: 11px;
+    width: 30px;
+    height: 11px;
   }
 
   @media (max-width: 950px) {

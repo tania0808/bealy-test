@@ -39,7 +39,7 @@ export default function OfferCard({
 }
 
 const Image = styled.div`
-display: flex;
+  display: flex;
   height: 230px;
   & > img {
     width: 50%;
@@ -59,7 +59,6 @@ const OfferCardS = styled.div`
   box-sizing: border-box;
 
   padding: 0 24px;
-
 
   & > span {
     height: 1px;

@@ -13,6 +13,7 @@ import HealthAssistanceDesktop from "./components/HealthAssistance/HealthAssista
 import HealthAssistanceMobile from "./components/HealthAssistance/HealthAssistanceMobile";
 import InscriptionStepsDesktop from './components/InscriptionSteps/InscriptionStepsDesktop'
 import InscriptionStepsMobile from './components/InscriptionSteps/InscriptionStepsMobile'
+import Statistics  from './components/Statistics/Statistics'
 
 const Home: React.FunctionComponent = (props) => {
   return (
@@ -32,6 +33,7 @@ const Home: React.FunctionComponent = (props) => {
       <HealthAssistanceMobile/>
       <InscriptionStepsDesktop/>
       <InscriptionStepsMobile/>
+      <Statistics/>
     </>
   );
 };
