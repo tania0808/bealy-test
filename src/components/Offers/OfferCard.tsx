@@ -1,13 +1,20 @@
 import styled from "styled-components";
-import { Button } from '../Button.styled'
+import { Button } from "../Button.styled";
+
 interface Props {
-    id: number,
+  id: number;
   image: string;
   title: string;
   description: string;
-  slogan: string
+  slogan: string;
 }
-export default function OfferCard({ id,title, image, description, slogan }: Props) {
+export default function OfferCard({
+  id,
+  title,
+  image,
+  description,
+  slogan,
+}: Props) {
   return (
     <OfferCardS>
       <Image>
@@ -19,15 +26,22 @@ export default function OfferCard({ id,title, image, description, slogan }: Prop
       <span></span>
       <h4>{title}</h4>
       <p>{description}</p>
-      <Button margin='56px 0' bg={id % 2 === 0 ? '#f0004c' : 'black'} border={id % 2 === 0 ? '#f0004c' : 'black'} color='#fff'>{slogan}</Button>
+      <Button
+        margin="56px 0"
+        bg={id % 2 === 0 ? "#f0004c" : "black"}
+        border={id % 2 === 0 ? "#f0004c" : "black"}
+        color="#fff"
+      >
+        {slogan}
+      </Button>
     </OfferCardS>
   );
 }
 
 const Image = styled.div`
-text-align: center;
-height: 230px;
-& > img {
+  text-align: center;
+  height: 230px;
+  & > img {
     padding: 56px 0;
     width: 50%;
     margin: 0 auto;
@@ -67,6 +81,4 @@ const OfferCardS = styled.div`
     margin-top: 8px;
     color: ${({ theme }) => theme.colors.black_700};
   }
-
-  & 
 `;
