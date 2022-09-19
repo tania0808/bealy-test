@@ -2,25 +2,21 @@ import styled from "styled-components";
 
 interface Button {
   bg?: string;
-  margin: string;
+  margin?: string;
+  color?: string;
+  border?: string;
 }
 
 export const Button = styled.button<Button>`
-  border: 1px solid ${({ theme }) => theme.colors.button};
-  color: ${({ theme }) => theme.colors.button};
+  border: 1px solid ${({ theme, border }) => border || theme.colors.button};
   border-radius: 6px;
   padding: 16px 24px;
   font-weight: 600;
-  margin-top: ${({ margin }) => margin || 0};
-  background-color: #fff;
+  margin: ${({ margin }) => margin || 0};
+  background-color: ${({ bg }) => bg || "#fff"};
+  color: ${({ color, theme }) => color || theme.colors.button};
 
   @media (max-width: 950px) {
     width: 100%;
   }
-  ${(props) =>
-    props.bg === "black" &&
-    `
-  background-color: #1B1B1B;
-  color: #fff
-  `}
 `;

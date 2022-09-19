@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-weight:400 ;
     }
-    h1, h2 {
+    h1, h2, h3, h4, h5 {
         font-family: 'Gilroy';
     }
     p, a, button {

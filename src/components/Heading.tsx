@@ -10,6 +10,9 @@ export const Heading = styled.div<IHeading>`
   line-height: 56px;
   padding: ${({ padding }) => (padding ? padding : "0")};
   font-weight: 700;
+  &>p {
+    color: ${({theme}) => theme.colors.black_600};
+  }
    &>* {
     font-weight: 700;
    }

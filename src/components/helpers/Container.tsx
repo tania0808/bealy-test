@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface IContainer {
+  margin?: string;
+}
+
+export const ContainerS = styled.div<IContainer>`
   width: 1000px;
   max-width: 100%;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: ${({ margin }) => (margin ? margin : "0 auto")};
 
   @media (max-width: 950px) {
     max-width: 435px;

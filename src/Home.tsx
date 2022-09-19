@@ -1,18 +1,18 @@
 import * as React from "react";
 import NavBar from "./components/Header/Header";
-import { Container } from "./components/helpers/Container.styled";
+import { ContainerS } from "./components/helpers/Container";
 import HealthPartner from './components/HealthPartner'
 import Slider from './components/Slider/Slider'
-interface IHomeProps {}
-
-const Home: React.FunctionComponent<IHomeProps> = (props) => {
+import Offers from "./components/Offers/Offers";
+const Home: React.FunctionComponent = (props) => {
   return (
     <>
       <NavBar />
-      <Container>
+      <ContainerS>
         <HealthPartner/>
-      </Container>
+      </ContainerS>
       <Slider/>
+        <Offers/>
     </>
   );
 };

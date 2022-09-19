@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
         </Item>
         <Item>
           <Link href="#">Se connecter</Link>
-          <Button bg="black">Ouvrir un compte</Button>
+          <Button bg="black" color="#fff">Ouvrir un compte</Button>
         </Item>
         <Hamburger>
           <img src={hamburger} alt="hamburger" />

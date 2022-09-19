@@ -1,5 +1,5 @@
 import { Flex } from "./helpers/Flex.styled";
-import { Container } from "./helpers/Container.styled";
+import { ContainerS } from "./helpers/Container";
 import healthPartners from "../assets/health-partners.svg";
 import { Image } from "./Image.styled";
 import { ColoredSpan } from "./ColoredSpan";
@@ -8,7 +8,7 @@ import { Button } from "./Button.styled";
 
 const HealthPartner = () => {
   return (
-    <Container>
+    <ContainerS>
       <Flex>
         <div>
           <Heading padding="0 40px 0 0">
@@ -25,7 +25,7 @@ const HealthPartner = () => {
             tailles et les indépendants.
           </p>
           <Flex>
-            <Button bg="black" margin="10px" >Comparer les offres</Button>
+            <Button bg="black" margin="10px" color="#fff">Comparer les offres</Button>
             <Button margin="10px">Contacter l'équipe</Button>
           </Flex>
         </div>
@@ -33,7 +33,7 @@ const HealthPartner = () => {
           <Image src={healthPartners} />
         </div>
       </Flex>
-    </Container>
+    </ContainerS>
   );
 };
 

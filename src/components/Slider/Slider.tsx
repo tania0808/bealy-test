@@ -3,41 +3,40 @@ import styled from "styled-components";
 import { SlideTrack } from "./SlideTrack.styled";
 import Slide from "./Slide";
 import { Heading } from "../Heading";
-import { Container } from "../helpers/Container.styled";
+import { ContainerS } from "../helpers/Container";
 import partnersJSON from "../../data/partners.json";
 
 export default function Slider() {
   const [partners] = useState(partnersJSON);
-  console.log(import.meta.env.VITE_BASE_URL);
 
   return (
     <SliderS>
-      <Container>
+      <ContainerS>
         <Heading align="center">
           <h4>Nos Partenaires</h4>
         </Heading>
-      </Container>
+      </ContainerS>
       <SlideTrack>
-        {partners.map((logo) => {
+        {partners.map((logo: any) => {
           return (
             <Slide key={logo.id}>
               <img
                 src={`${import.meta.env.VITE_BASE_URL}assets/partners-logos/${
                   logo.image
                 }.svg`}
-                alt=""
+                alt={logo.image}
               />
             </Slide>
           );
         })}
-        {partners.map((logo) => {
+        {partners.map((logo: any) => {
           return (
             <Slide key={logo.id}>
               <img
                 src={`${import.meta.env.VITE_BASE_URL}assets/partners-logos/${
                   logo.image
                 }.svg`}
-                alt=""
+                alt={logo.image}
               />
             </Slide>
           );
