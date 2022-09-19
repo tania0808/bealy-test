@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 24px;
     }
 
+
     @media (max-width: 950px) {
         h2 {
         font-size: 36px;

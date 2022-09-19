@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const Flex = styled.div`
+interface IFlex {
+  padding?:string
+  direction?:string
+}
+
+export const Flex = styled.div<IFlex>`
   display: flex;
   align-items: center;
+  flex-direction: ${({direction}) => direction ? direction : 'row'};
   justify-content: space-between;
   margin-top: 1rem;
   
@@ -12,6 +18,8 @@ export const Flex = styled.div`
     &>p {
       margin-top: 16px;
       padding-right: 29px;
+      color: ${({ theme}) => theme.colors.black_700};
+
     }
   }
   @media (max-width: 950px) {
@@ -20,7 +28,7 @@ export const Flex = styled.div`
     padding: 0 10px;
     flex: 1;
     
-    &>p {
+    p {
       font-size: 18px;
       margin-top: 10px;
     }

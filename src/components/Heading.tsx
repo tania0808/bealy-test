@@ -6,7 +6,7 @@ interface IHeading {
 }
 
 export const Heading = styled.div<IHeading>`
-  text-align: ${({ align }) => (align ? align : "0")};
+  text-align: ${({ align }) => (align ? align : "start")};
   line-height: 56px;
   padding: ${({ padding }) => (padding ? padding : "0")};
   font-weight: 700;
@@ -30,5 +30,6 @@ export const Heading = styled.div<IHeading>`
   }
   @media (max-width: 950px) {
     padding: 0;
+    text-align: ${({ align }) => (align ? align : "start")};
   }
 `;

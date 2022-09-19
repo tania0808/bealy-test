@@ -5,6 +5,7 @@ interface IContainer {
 }
 
 export const ContainerS = styled.div<IContainer>`
+  position: relative;
   width: 1000px;
   max-width: 100%;
   padding: 0 20px;

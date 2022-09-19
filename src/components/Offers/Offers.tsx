@@ -2,7 +2,6 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Heading } from "../Heading";
 import OfferCard from "./OfferCard";
-import { Flex } from "../helpers/Flex.styled";
 import { ContainerS } from "../helpers/Container";
 import offersJSON from "../../data/offers.json";
 

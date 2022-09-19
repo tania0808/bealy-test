@@ -23,8 +23,8 @@ export default function ProCard({ title, image, description }: Props) {
 
 const ProCardS = styled.div`
   height: 100%;
-  padding: 0 2rem;
   margin: 0 auto;
+  max-width: 191px;
 
   & > h5 {
     margin-top: 40px;
