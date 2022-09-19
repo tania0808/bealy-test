@@ -14,6 +14,12 @@ export const Flex = styled.div<IFlex>`
   
   &>div {
     flex: 1;
+
+    & > img {
+      object-fit: contain;
+      width: 510px;
+      padding: ${({padding}) => padding ? padding : '0'};
+    }
     
     &>p {
       margin-top: 16px;

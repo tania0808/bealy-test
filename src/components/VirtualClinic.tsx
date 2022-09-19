@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const VirtualClinic = () => {
   return (
-    <ContainerS margin="220px auto">
+    <ContainerS margin="180px auto">
       <Box>
         <img src={bealyHealth} alt="" />
         <>

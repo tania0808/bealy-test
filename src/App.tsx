@@ -12,6 +12,7 @@ const theme = {
     black_400: '#ACABAC',
     black_600: '#757272',
     black_700: '#605C5C',
+    black_800: '#444040',
     primary_red: '#f0004c',
     blue: "#2774E9"
   }

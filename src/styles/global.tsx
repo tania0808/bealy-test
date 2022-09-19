@@ -40,6 +40,9 @@ const GlobalStyles = createGlobalStyle`
     h5 {
         font-size: 24px;
     }
+    h6 {
+        font-size: 18px;
+    }
 
 
     @media (max-width: 950px) {
