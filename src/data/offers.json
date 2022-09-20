@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "offer-1",
+    "title": "Bealy Health +",
+    "description": "Les services essentiels pour gérer la santé de vos collaborateurs. Notre équipe santé vous attend dans l’app Bealy ",
+    "slogan": "Accélérer"
+  },
+  {
+    "id": 2,
+    "image": "offer-2",
+    "title": "Bealy Smart",
+    "description": "Le compte complet: Service santé, prévention 360° + santé mentale illimité. Notre équipe santé vous attend dans l’app Bealy ",
+    "slogan": "Foncer"
+  },
+  {
+    "id": 3,
+    "image": "offer-3",
+    "title": "Bealy Premium",
+    "description": "Le forfait qui inclut toutes nos fonctionnalités et un support prioritaire",
+    "slogan": "Décoler"
+  }
+]

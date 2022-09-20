@@ -1,0 +1,36 @@
+import { Flex } from "./helpers/Flex.styled";
+import { Image } from "./helpers/Image.styled";
+import { ColoredSpan } from "./helpers/ColoredSpan";
+import { Button } from "./helpers/Button.styled";
+import { H2 } from './helpers/Utils.styled'
+
+import healthPartners from "../assets/health-partners.svg";
+
+const HealthPartner = () => {
+  return (
+      <Flex>
+        <div>
+            <H2 padding='0 70px 0 0' >Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
+            salariés</H2>
+          <p>
+            De l’assurance santé à la prévention personnalisée en passant par sa
+            clinique virtuelle 360°: chat médical, téléconsultation, santé
+            mentale, organisation d’intervention médicale...
+          </p>
+          <p>
+            Bealy propose une solution complète pour les entreprises de toutes
+            tailles et les indépendants.
+          </p>
+          <Flex>
+            <Button bg="black" margin="10px" color="#fff">Comparer les offres</Button>
+            <Button margin="10px">Contacter l'équipe</Button>
+          </Flex>
+        </div>
+        <div>
+          <Image src={healthPartners} />
+        </div>
+      </Flex>
+  );
+};
+
+export default HealthPartner;

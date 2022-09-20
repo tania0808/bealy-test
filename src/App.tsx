@@ -1,12 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Home from "./Home";
+import GlobalStyle  from './theme/globalStyles'
+import { ThemeProvider } from "styled-components";
+import { theme } from './theme/theme'
 
 function App() {
-
   return (
-    <div className="App">
-      
-    </div>
-  )
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <Home />
+      </>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
