@@ -40,11 +40,12 @@ export const H6 = styled(Heading)`
 interface IPar {
   align?: string;
   padding?: string;
+  color?:string
 }
 export const P = styled.p<IPar>`
   font-size: 18px;
   line-height: 22px;
-  color: ${({theme}) => theme.colors.black_600};
+  color: ${({theme, color}) => (color ? color : theme.colors.black_600)};
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
 `;

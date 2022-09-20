@@ -4,6 +4,7 @@ import statisticsJSON from "../../data/statistics.json";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import { H4 } from "../helpers/Utils.styled";
+
 export default function Offers() {
   const [offers] = useState(statisticsJSON);
 

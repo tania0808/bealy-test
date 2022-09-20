@@ -3,12 +3,13 @@ import { FlexItem } from "./Utils.styled";
 interface IFlex {
   padding?:string
   direction?:string
+  margin?:string
 }
 
 export const Flex = styled(FlexItem)<IFlex>`
   flex-direction: ${({direction}) => direction ? direction : 'row'};
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: ${({margin}) => margin ? margin : '1rem'};
   
   &>div {
     flex: 1;

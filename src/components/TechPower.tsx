@@ -6,7 +6,7 @@ import { Button } from "./helpers/Button.styled";
 
 const TechPower = () => {
   return (
-      <Flex direction="row-reverse">
+      <Flex direction="row-reverse" margin="200px">
         <div>
             <H2>
               Toute la puissance de la tech au service de la santé de vos
