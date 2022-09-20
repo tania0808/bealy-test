@@ -6,6 +6,7 @@ interface Button {
   padding?:string;
   color?: string;
   border?: string;
+  justify?: string;
 }
 
 export const Button = styled.button<Button>`
@@ -17,7 +18,8 @@ export const Button = styled.button<Button>`
   background-color: ${({ bg }) => bg || "#fff"};
   color: ${({ color, theme }) => color || theme.colors.button};
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: ${({ justify }) => justify || "center"};
   & > img {
     padding-left: 11px;
     width: 30px;

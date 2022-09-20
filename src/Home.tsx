@@ -16,13 +16,13 @@ import InscriptionStepsMobile from "./components/InscriptionSteps/InscriptionSte
 import Statistics from "./components/Statistics/Statistics";
 import ContactCareTeam from "./components/ContactCareTeam/ContactCareTeam";
 import BealyUpdates from './components/BealyUpdates';
-
+import BealyApp from "./components/BealyApp";
 
 const Home = () => {
   return (
     <>
         <NavBar />
-      <ContainerS>
+      {/* <ContainerS>
         <HealthPartner />
         <Slider />
         <Offers />
@@ -37,8 +37,11 @@ const Home = () => {
         <InscriptionStepsMobile />
         <Statistics />
         <ContactCareTeam />
-      </ContainerS>
+      </ContainerS> */}
+      <ContainerS>
         <BealyUpdates/>
+        <BealyApp/>
+      </ContainerS>
     </>
   );
 };
