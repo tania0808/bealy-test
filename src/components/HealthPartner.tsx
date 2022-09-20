@@ -1,20 +1,17 @@
 import { Flex } from "./helpers/Flex.styled";
-import { ContainerS } from "./helpers/Container";
+import { Image } from "./helpers/Image.styled";
+import { ColoredSpan } from "./helpers/ColoredSpan";
+import { Button } from "./helpers/Button.styled";
+import { H2 } from './helpers/Utils.styled'
+
 import healthPartners from "../assets/health-partners.svg";
-import { Image } from "./Image.styled";
-import { ColoredSpan } from "./ColoredSpan";
-import { Heading } from "./Heading";
-import { Button } from "./Button.styled";
 
 const HealthPartner = () => {
   return (
-    <ContainerS>
       <Flex>
         <div>
-          <Heading>
-            <h2>Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
-            salariés</h2>
-          </Heading>
+            <H2 padding='0 70px 0 0' >Le partenaire santé <ColoredSpan>tout-en-un</ColoredSpan> pour vos
+            salariés</H2>
           <p>
             De l’assurance santé à la prévention personnalisée en passant par sa
             clinique virtuelle 360°: chat médical, téléconsultation, santé
@@ -33,7 +30,6 @@ const HealthPartner = () => {
           <Image src={healthPartners} />
         </div>
       </Flex>
-    </ContainerS>
   );
 };
 

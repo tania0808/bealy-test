@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Flex } from "../helpers/Flex.styled";
 import ProCard from "./ProCard";
+import { H4 } from "../helpers/Utils.styled";
 import proJSON from "../../data/pro-advantages.json";
 
 export default function ProSection() {
@@ -9,9 +9,9 @@ export default function ProSection() {
 
   return (
     <ProSectionS>
-      <h3>
+      <H4 align="center" padding="0 0 54px">
         Le compte pro idéal pour gérer <br /> votre santé
-      </h3>
+      </H4>
       <div>
         {pro.map((item) => {
           return <ProCard key={item.id} {...item} />;

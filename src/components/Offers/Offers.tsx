@@ -1,40 +1,24 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Heading } from "../Heading";
 import OfferCard from "./OfferCard";
-import { ContainerS } from "../helpers/Container";
 import offersJSON from "../../data/offers.json";
-
+import { H3, P } from "../helpers/Utils.styled";
+import { GridContainer } from "../helpers/GridContainer";
 export default function Offers() {
   const [offers] = useState(offersJSON);
 
   return (
-      <ContainerS margin="100px auto">
         <>
-          <Heading align="center">
-            <h3>
+            <H3 align="center" padding="225px 0 32px">
               Nos offres de santé pour prendre soin <br /> de vos équipes
-            </h3>
-            <p>Choisissez votre abonnement</p>
-          </Heading>
-          <OffersS>
+            </H3>
+            <P align="center" padding="0 0 42px">Choisissez votre abonnement</P>
+          <GridContainer>
             {offers.map((item) => {
               return <OfferCard key={item.id} {...item} />;
             })}
-          </OffersS>
+          </GridContainer>
         </>
-      </ContainerS>
   );
 }
 
-const OffersS = styled.div`
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  grid-column-gap: 24px;
-  @media (max-width: 950px) {
-    grid-template-columns: auto;
-    grid-row-gap: 24px;
-  }
-`;

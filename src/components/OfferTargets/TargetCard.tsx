@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../Button.styled";
-import { ColoredSpan } from "../ColoredSpan";
+import { Button } from "../helpers/Button.styled";
+import {H5} from '../helpers/Utils.styled'
 
 interface Props {
   id: number;
@@ -11,7 +11,7 @@ interface Props {
 export default function OfferCard({ title, image, description }: Props) {
   return (
     <OfferCardS>
-      <h5>{title}</h5>
+      <H5 align="center" padding="40px 0 0">{title}</H5>
       <Image>
         <img
           src={`${
@@ -24,7 +24,7 @@ export default function OfferCard({ title, image, description }: Props) {
       <Button margin="56px 0 21px 0" bg="black" color="#fff">
         Trouver mon assurance
       </Button>
-      <a href="">Échangez avec un conseiller</a>
+      <a href="#">Échangez avec un conseiller</a>
     </OfferCardS>
   );
 }

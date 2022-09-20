@@ -1,9 +1,5 @@
 import styled from "styled-components";
-
-interface ILink {
-  color?: string;
-  font?: string;
-}
+import { FlexItem } from "../helpers/Utils.styled";
 
 export const Header = styled.header`
   margin: 0 auto;
@@ -20,34 +16,14 @@ export const Header = styled.header`
   }
 `;
 
-export const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  & > img {
-    width: 40px;
-  }
+export const Logo = styled(FlexItem);
 
-  & > h2 {
-    font-size: 24px;
-  }
-`;
-
-export const Item = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+export const NavItem = styled(FlexItem)`
   gap: 1.5rem;
 
   @media (max-width: 950px) {
     display: none;
   }
-`;
-
-export const Link = styled.a<ILink>`
-  font-size: 16px;
-  text-decoration: none;
-  color: ${({ color, theme }) => (color === "grey" ? theme.colors.black_400 : "black")};
-  font-weight: ${({ font }) => (font === "bold" ? "700" : "400")};
 `;
 
 export const Hamburger = styled.div`

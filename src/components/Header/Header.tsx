@@ -1,34 +1,35 @@
-import { Header, Logo, Item, Link, Hamburger } from "./Header.styled";
-import { Button } from "../Button.styled";
+import { Header, NavItem, Hamburger } from "./Header.styled";
+import { Button } from "../helpers/Button.styled";
 import logo from "../../assets/logo.svg";
 import hamburger from '../../assets/hamburger.svg'
+import { H5, Link } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Utils.styled";
 
-const NavBar: React.FC = () => {
+const NavBar = () => {
 
   return (
     <>
       <Header>
-        <Logo>
+        <FlexItem>
           <img src={logo} alt="logo bealy" />
-          <h2>Bealy</h2>
-        </Logo>
-        <Item>
+          <H5>Bealy</H5>
+        </FlexItem>
+        <NavItem>
             <Link href="#" color='grey'>Personnel</Link>
             <Link href="#" font='bold'>Entreprise</Link>
-        </Item>
-        <Item>
+        </NavItem>
+        <NavItem>
             <Link href="#">Tarifs</Link>
             <Link href="#">Téléconsultaion</Link>
             <Link href="#">Nos solutions</Link>
-        </Item>
-        <Item>
+        </NavItem>
+        <NavItem>
           <Link href="#">Se connecter</Link>
           <Button bg="black" color="#fff">Ouvrir un compte</Button>
-        </Item>
+        </NavItem>
         <Hamburger>
           <img src={hamburger} alt="hamburger" />
         </Hamburger>
-
       </Header>
     </>
   );

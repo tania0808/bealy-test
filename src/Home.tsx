@@ -2,7 +2,7 @@ import * as React from "react";
 import NavBar from "./components/Header/Header";
 import { ContainerS } from "./components/helpers/Container";
 import HealthPartner from "./components/HealthPartner";
-import Slider from "./components/Slider/Slider";
+import Slider from "./components/PartnersSlider/PartnersSlider";
 import Offers from "./components/Offers/Offers";
 import ProSection from "./components/ProAdvantages/ProSection";
 import EmployeeEquipment from "./components/EmployeeEquipment";
@@ -11,29 +11,31 @@ import TechPower from "./components/TechPower";
 import VirtualClinic from "./components/VirtualClinic";
 import HealthAssistanceDesktop from "./components/HealthAssistance/HealthAssistanceDesktop";
 import HealthAssistanceMobile from "./components/HealthAssistance/HealthAssistanceMobile";
-import InscriptionStepsDesktop from './components/InscriptionSteps/InscriptionStepsDesktop'
-import InscriptionStepsMobile from './components/InscriptionSteps/InscriptionStepsMobile'
-import Statistics  from './components/Statistics/Statistics'
+import InscriptionStepsDesktop from "./components/InscriptionSteps/InscriptionStepsDesktop";
+import InscriptionStepsMobile from "./components/InscriptionSteps/InscriptionStepsMobile";
+import Statistics from "./components/Statistics/Statistics";
+import ContactCareTeam from "./components/ContactCareTeam/ContactCareTeam";
 
-const Home: React.FunctionComponent = (props) => {
+const Home = () => {
   return (
     <>
-      <NavBar />
+        <NavBar />
       <ContainerS>
         <HealthPartner />
+        <Slider />
+        <Offers />
+        <ProSection />
+        <EmployeeEquipment />
+        <OfferTargets />
+        <TechPower />
+        <VirtualClinic />
+        <HealthAssistanceDesktop />
+        <HealthAssistanceMobile />
+        <InscriptionStepsDesktop />
+        <InscriptionStepsMobile />
+        <Statistics />
+        <ContactCareTeam />
       </ContainerS>
-      <Slider />
-      <Offers />
-      <ProSection/>
-      <EmployeeEquipment/>
-      <OfferTargets/>
-      <TechPower/>
-      <VirtualClinic/>
-      <HealthAssistanceDesktop/>
-      <HealthAssistanceMobile/>
-      <InscriptionStepsDesktop/>
-      <InscriptionStepsMobile/>
-      <Statistics/>
     </>
   );
 };

@@ -1,21 +1,17 @@
 import { Flex } from "./helpers/Flex.styled";
-import { ContainerS } from "./helpers/Container";
+import { H2 } from "./helpers/Utils.styled";
 import techPower from "../assets/tech-power.svg";
-import { Image } from "./Image.styled";
-import { Heading } from "./Heading";
-import { Button } from "./Button.styled";
+import { Image } from "./helpers/Image.styled";
+import { Button } from "./helpers/Button.styled";
 
 const TechPower = () => {
   return (
-    <ContainerS>
       <Flex direction="row-reverse">
         <div>
-          <Heading padding="0 20px 0 0" align="start">
-            <h2>
+            <H2>
               Toute la puissance de la tech au service de la santé de vos
               salariés
-            </h2>
-          </Heading>
+            </H2>
           <p>
             Offrez à vos salariés la possibilité de reprendre le contrôle de
             leur santé. Bealy est une plateforme unique de prévention médicale
@@ -37,7 +33,6 @@ const TechPower = () => {
           <Image src={techPower} />
         </div>
       </Flex>
-    </ContainerS>
   );
 };
 

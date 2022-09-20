@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../Button.styled";
-
+import { Button } from "../helpers/Button.styled";
+import {H4} from '../helpers/Utils.styled'
 interface Props {
   id: number;
   image: string;
@@ -24,7 +24,7 @@ export default function OfferCard({
         />
       </Image>
       <span></span>
-      <h4>{title}</h4>
+      <H4 padding="40px 0 8px">{title}</H4>
       <p>{description}</p>
       <Button
         margin="56px 0"

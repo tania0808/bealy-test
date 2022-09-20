@@ -16,7 +16,7 @@ export const Button = styled.button<Button>`
   background-color: ${({ bg }) => bg || "#fff"};
   color: ${({ color, theme }) => color || theme.colors.button};
   display: flex;
-  align-items: center;
+  justify-content: center;
   & > img {
     padding-left: 11px;
     width: 30px;

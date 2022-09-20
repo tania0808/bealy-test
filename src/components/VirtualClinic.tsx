@@ -1,17 +1,12 @@
-import { ContainerS } from "./helpers/Container";
 import bealyHealth from "../assets/bealy-health.svg";
-import { Heading } from "./Heading";
 import styled from "styled-components";
-
+import { H4 } from "./helpers/Utils.styled";
 const VirtualClinic = () => {
   return (
-    <ContainerS margin="180px auto">
       <Box>
         <img src={bealyHealth} alt="" />
         <>
-          <Heading align="center">
-            <h3>La clinique virtuelle Bealy 360°</h3>
-          </Heading>
+            <H4 align="center">La clinique virtuelle Bealy 360°</H4>
           <p>
             Une assurance santé, c’est bien mais ce n’est pas suffisant. Prendre
             soin de la santé de ses collaborateurs c’est encore mieux.
@@ -23,19 +18,19 @@ const VirtualClinic = () => {
           </p>
         </>
       </Box>
-    </ContainerS>
   );
 };
 
 const Box = styled.div`
   max-width: 610px;
-  margin: 0 auto;
+  margin: 222px auto 180px;
 
   & > img {
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
   }
+  
   & > p {
     margin-top: 16px;
     padding-right: 29px;

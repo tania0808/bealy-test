@@ -1,18 +1,13 @@
 import phoneXCard from "../assets/phoneXCard.svg";
 import { Flex } from "./helpers/Flex.styled";
-import { ContainerS } from "./helpers/Container";
-import { Heading } from "./Heading";
-import { Button } from "./Button.styled";
+import { Button } from "./helpers/Button.styled";
 import styled from "styled-components";
-
+import { H2 } from "./helpers/Utils.styled";
 export default function EmployeeEquipment() {
   return (
-    <ContainerS>
       <Flex>
         <div>
-          <Heading padding="0 40px 0 0">
-            <h2>Équipez vos salariés, en moins de 10 minutes !</h2>
-          </Heading>
+            <H2>Équipez vos salariés, en moins de 10 minutes !</H2>
           <p>
             Entrez votre RIB, votre numéro et signez votre contrat en ligne !
             L’accès à la santé n’a jamais été aussi simple
@@ -27,7 +22,6 @@ export default function EmployeeEquipment() {
           <img src={phoneXCard} alt="phoneXCard" />
         </Image>
       </Flex>
-    </ContainerS>
   );
 }
 const Image = styled.div`
