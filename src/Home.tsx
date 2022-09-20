@@ -15,14 +15,15 @@ import InscriptionStepsDesktop from "./components/InscriptionSteps/InscriptionSt
 import InscriptionStepsMobile from "./components/InscriptionSteps/InscriptionStepsMobile";
 import Statistics from "./components/Statistics/Statistics";
 import ContactCareTeam from "./components/ContactCareTeam/ContactCareTeam";
-import BealyUpdates from './components/BealyUpdates';
+import BealyUpdates from "./components/BealyUpdates";
 import BealyApp from "./components/BealyApp";
+import SimplifyManagement from "./components/SimplifyManagement";
 
 const Home = () => {
   return (
     <>
-        <NavBar />
-      {/* <ContainerS>
+      <NavBar />
+      <ContainerS>
         <HealthPartner />
         <Slider />
         <Offers />
@@ -37,11 +38,12 @@ const Home = () => {
         <InscriptionStepsMobile />
         <Statistics />
         <ContactCareTeam />
-      </ContainerS> */}
-      <ContainerS>
-        <BealyUpdates/>
-        <BealyApp/>
       </ContainerS>
+      <ContainerS>
+        <BealyUpdates />
+        <BealyApp />
+      </ContainerS>
+      <SimplifyManagement />
     </>
   );
 };

@@ -9,7 +9,7 @@ export default function ProSection() {
 
   return (
     <ProSectionS>
-      <H4 align="center" padding="0 0 54px">
+      <H4 color="#fff" align="center" padding="0 0 54px">
         Le compte pro idéal pour gérer <br /> votre santé
       </H4>
       <div>
