@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface Button {
   bg?: string;
   margin?: string;
+  padding?:string;
   color?: string;
   border?: string;
 }
@@ -10,7 +11,7 @@ interface Button {
 export const Button = styled.button<Button>`
   border: 1px solid ${({ theme, border }) => border || theme.colors.button};
   border-radius: 6px;
-  padding: 16px 27px;
+  padding: ${({ padding }) => padding || "16px 27px"};
   font-weight: 600;
   margin: ${({ margin }) => margin || 0};
   background-color: ${({ bg }) => bg || "#fff"};

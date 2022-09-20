@@ -15,6 +15,8 @@ import InscriptionStepsDesktop from "./components/InscriptionSteps/InscriptionSt
 import InscriptionStepsMobile from "./components/InscriptionSteps/InscriptionStepsMobile";
 import Statistics from "./components/Statistics/Statistics";
 import ContactCareTeam from "./components/ContactCareTeam/ContactCareTeam";
+import BealyUpdates from './components/BealyUpdates';
+
 
 const Home = () => {
   return (
@@ -36,6 +38,7 @@ const Home = () => {
         <Statistics />
         <ContactCareTeam />
       </ContainerS>
+        <BealyUpdates/>
     </>
   );
 };

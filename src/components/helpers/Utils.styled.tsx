@@ -4,11 +4,13 @@ import { device } from "../../theme/device";
 interface IHeading {
   align?: string;
   padding?: string;
+  color?:string;
 }
 export const Heading = styled.h1<IHeading>`
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
   font-weight: 700;
+  color: ${({ color }) => (color ? color : "black")};
 `;
 
 export const H2 = styled(Heading)`
