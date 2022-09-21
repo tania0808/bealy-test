@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../theme/device";
+import { CardImage } from "../helpers/CardImage";
 
 interface Props {
   id: number;
@@ -11,14 +12,14 @@ interface Props {
 export default function ProCard({ title, image, description }: Props) {
   return (
     <ProCardS>
-      <Image>
+      <CardImage>
         <img
           src={`${
             import.meta.env.VITE_BASE_URL
           }assets/pro-advantages/${image}.svg`}
           alt="image"
         />
-      </Image>
+      </CardImage>
       <h5>{title}</h5>
       <p>{description}</p>
     </ProCardS>
@@ -44,17 +45,5 @@ const ProCardS = styled.div`
     padding: 0;
     min-width: 193px;
     max-width: 193px;
-  }
-`;
-
-const Image = styled.div`
-  text-align: center;
-  height: 64px;
-  width: 100%;
-
-  & > img {
-    width: 30%;
-    margin: 0 auto;
-    height: 100%;
   }
 `;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Button, ButtonPink } from "../helpers/Button.styled";
-import {H4} from '../helpers/Utils.styled'
+import { H4 } from "../helpers/Utils.styled";
+import { CardImage } from "../helpers/CardImage";
+
 interface Props {
   id: number;
   image: string;
@@ -17,28 +19,23 @@ export default function OfferCard({
 }: Props) {
   return (
     <OfferCardS>
-      <Image>
+      <CardImage height="230px" imageWidth="50%">
         <img
           src={`${import.meta.env.VITE_BASE_URL}assets/offers/${image}.svg`}
           alt="image"
         />
-      </Image>
+      </CardImage>
       <span></span>
       <H4 padding="40px 0 8px">{title}</H4>
       <p>{description}</p>
-      {id % 2 === 0 ? <ButtonPink margin="10px">{slogan}</ButtonPink> : <Button margin="10px">{slogan}</Button>}
+      {id % 2 === 0 ? (
+        <ButtonPink margin="20px 0">{slogan}</ButtonPink>
+      ) : (
+        <Button margin="20px 0">{slogan}</Button>
+      )}
     </OfferCardS>
   );
 }
-
-const Image = styled.div`
-  display: flex;
-  height: 230px;
-  & > img {
-    width: 50%;
-    margin: 0 auto;
-  }
-`;
 
 const OfferCardS = styled.div`
   height: 100%;

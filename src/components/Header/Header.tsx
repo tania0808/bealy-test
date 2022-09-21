@@ -3,7 +3,6 @@ import { H5, Link, FlexItem } from "../helpers/Utils.styled";
 import { Button } from "../helpers/Button.styled";
 import hamburger from '../../assets/hamburger.svg'
 import logo from "../../assets/logo.svg";
-import { Flex } from "../helpers/Flex.styled";
 
 const NavBar = () => {
 

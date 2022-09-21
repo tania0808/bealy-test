@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../helpers/Button.styled";
-import {H5} from '../helpers/Utils.styled'
+import { H5 } from "../helpers/Utils.styled";
+import { CardImage } from "../helpers/CardImage";
 
 interface Props {
   id: number;
@@ -11,33 +12,23 @@ interface Props {
 export default function OfferCard({ title, image, description }: Props) {
   return (
     <OfferCardS>
-      <H5 align="center" padding="40px 0 0">{title}</H5>
-      <Image>
+      <H5 align="center" padding="40px 0 0">
+        {title}
+      </H5>
+      <CardImage height="150px" imageWidth="50%" margin="20px 0 0 0">
         <img
           src={`${
             import.meta.env.VITE_BASE_URL
           }assets/offer-targets/${image}.svg`}
           alt="image"
         />
-      </Image>
+      </CardImage>
       <p>{description}</p>
-      <Button margin="56px 0 21px 0">
-        Trouver mon assurance
-      </Button>
+      <Button margin="56px 0 21px 0">Trouver mon assurance</Button>
       <a href="#">Échangez avec un conseiller</a>
     </OfferCardS>
   );
 }
-
-const Image = styled.div`
-  display: flex;
-  height: 150px;
-  margin-top: 20px;
-  & > img {
-    width: 50%;
-    margin: 0 auto;
-  }
-`;
 
 const OfferCardS = styled.div`
   height: 100%;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../helpers/Button.styled";
+import { CardImage } from "../helpers/CardImage";
 
 interface Props {
   id: number;
@@ -9,25 +10,16 @@ interface Props {
 export default function StatisticItem({ id, image, description }: Props) {
   return (
     <StatisticItemS>
-      <Image>
+      <CardImage height="154px" imageWidth="50%">
         <img
           src={`${import.meta.env.VITE_BASE_URL}assets/statistics/${image}.svg`}
           alt="image"
         />
-      </Image>
+      </CardImage>
       <p>{description}</p>
     </StatisticItemS>
   );
 }
-
-const Image = styled.div`
-  display: flex;
-  height: 154px;
-  & > img {
-    width: 50%;
-    margin: 0 auto;
-  }
-`;
 
 const StatisticItemS = styled.div`
   height: 100%;

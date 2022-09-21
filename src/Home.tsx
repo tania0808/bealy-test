@@ -25,8 +25,8 @@ const Home = () => {
     <>
       <NavBar />
       <ContainerS>
-        <HealthPartner />
-        {/* <Slider/>
+        <HealthPartner /> 
+        <Slider/>
         <Offers />
         <ProSection />
         <EmployeeEquipment />
@@ -42,7 +42,7 @@ const Home = () => {
       </ContainerS>
       <ContainerS>
         <BealyUpdates />
-        <BealyApp />*/}
+        <BealyApp />
       </ContainerS>
       <SimplifyManagement />  
       <ContainerS>
