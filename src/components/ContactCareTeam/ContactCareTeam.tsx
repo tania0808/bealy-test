@@ -4,8 +4,11 @@ import styled from "styled-components";
 import { P } from "../helpers/Utils.styled";
 import Images from "./Images";
 import { device } from "../../theme/device";
+import contactCareteamJSON from "../../data/contact-careteam.json";
+import {useState} from 'react'
 
 export default function ContactCareTeam() {
+  const [icons] = useState(contactCareteamJSON);
   return (
     <ContactCareTeamS>
       <div>
@@ -19,7 +22,7 @@ export default function ContactCareTeam() {
         <Button bg="black" color="#fff" margin="0 auto">
           Prendre rendez-vous<p> &nbsp; avec l’équipe Careteam </p>
         </Button>
-        <Images />
+        <Images icons={icons} width="80px" />
       </div>
     </ContactCareTeamS>
   );

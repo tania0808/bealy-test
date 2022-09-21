@@ -18,14 +18,15 @@ import ContactCareTeam from "./components/ContactCareTeam/ContactCareTeam";
 import BealyUpdates from "./components/BealyUpdates";
 import BealyApp from "./components/BealyApp";
 import SimplifyManagement from "./components/SimplifyManagement";
+import { PersonalizedSupport } from "./components/PersonalizedSupport/PersonalizedSupport";
 
 const Home = () => {
   return (
     <>
       <NavBar />
-      <ContainerS>
+      {/*<ContainerS>
         <HealthPartner />
-        <Slider />
+        <Slider/>
         <Offers />
         <ProSection />
         <EmployeeEquipment />
@@ -43,7 +44,10 @@ const Home = () => {
         <BealyUpdates />
         <BealyApp />
       </ContainerS>
-      <SimplifyManagement />
+      <SimplifyManagement /> */}
+      <ContainerS>
+        <PersonalizedSupport />
+      </ContainerS>
     </>
   );
 };

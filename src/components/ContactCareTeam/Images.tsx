@@ -1,8 +1,4 @@
-import contactCareteamJSON from "../../data/contact-careteam.json";
-import { useState } from "react";
-import styled from "styled-components";
-import { FlexItem } from "../helpers/Utils.styled";
-import { device } from "../../theme/device";
+import {IconBox} from '../helpers/CareIcon.styled'
 
 interface Icon {
   id: number;
@@ -13,12 +9,16 @@ interface Icon {
   leftM: string;
 }
 
-export default function Images() {
-  const [icons] = useState(contactCareteamJSON);
+type Data = {
+  icons: Icon []
+  width: string
+}
+
+export default function Images({icons, width}: Data) {
 
   return (
     <>
-      {icons.map((icon, index: number) => {
+      {icons.map((icon: Icon, index: number) => {
         return (
           <IconBox
             topD={icon.topD}
@@ -26,7 +26,7 @@ export default function Images() {
             topM={icon.topM}
             leftM={icon.leftM}
             key={index}
-            device={device.phone}
+            width={width}
           >
             <img
               src={`${import.meta.env.VITE_BASE_URL}assets/contact-careteam/${
@@ -49,29 +49,4 @@ interface IconBoxI {
   leftM: string
 }
 
-const IconBox = styled(FlexItem)<IconBoxI>`
-  position: absolute;
-  width: 80px;
-  max-width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: ${({ topD }) => topD};
-  left: ${({ leftD }) => leftD};
-  border: 1px solid #ececec;
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
 
-  & > img {
-    max-width: 100%;
-  }
-  
-  @media ${device.phone} {
-    max-width: 35px;
-    height: 35px;
-    padding: 5px;
-    top: ${({ topM }) => topM};
-    left: ${({ leftM }) => leftM};
-  }
-`;

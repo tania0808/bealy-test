@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "treatment",
+    "topD": "45px",
+    "leftD": "30px",
+    "topM": "40px",
+    "leftM": "35px"
+  },
+  {
+    "id": 2,
+    "image": "assurance",
+    "topD": "73%",
+    "leftD": "80%",
+    "topM": "83%",
+    "leftM": "88%"
+  },
+  {
+    "id": 3,
+    "image": "well-being",
+    "topD": "70%",
+    "leftD": "13%",
+    "topM": "80%",
+    "leftM": "10%"
+  },
+  {
+    "id": 4,
+    "image": "mental-health",
+    "topD": "47%",
+    "leftD": "90%",
+    "topM": "62%",
+    "leftM": "81%"
+  },
+  {
+    "id": 5,
+    "image": "medical-chat",
+    "topD": "20%",
+    "leftD": "85%",
+    "topM": "3%",
+    "leftM": "80%"
+  },
+  {
+    "id": 6,
+    "image": "teleconsultation",
+    "topD": "47%",
+    "leftD": "2%",
+    "topM": "60%",
+    "leftM": "3%"
+  }
+]

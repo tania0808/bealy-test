@@ -11,11 +11,13 @@ interface IFlex {
 }
 
 export const Flex = styled(FlexItem)<IFlex>`
+display: flex;
   flex-direction: ${({direction}) => direction ? direction : 'row'};
   justify-content: ${({ justify }) => justify || "space-between"};
   align-items: ${({ align }) => align || "center"};
   margin-top: ${({margin}) => margin ? margin : '1rem'};
   gap: ${({ gap }) => gap};
+  height: 100%;
 
   &>div {
     flex: 1;
