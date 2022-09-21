@@ -1,32 +1,51 @@
 import styled from "styled-components";
+import { device } from "../../theme/device";
 
 interface Button {
-  bg?: string;
+  bgWhite?: any;
+  colorBlack?: any;
   margin?: string;
-  padding?:string;
-  color?: string;
-  border?: string;
+  padding?: string;
   justify?: string;
+  border?: any;
 }
 
-export const Button = styled.button<Button>`
-  border: 1px solid ${({ theme, border }) => border || theme.colors.button};
+export const ButtonBase = styled.button<Button>`
   border-radius: 6px;
-  padding: ${({ padding }) => padding || "16px 27px"};
+  padding: ${({ padding }) => padding || "10px 27px"};
   font-weight: 600;
   margin: ${({ margin }) => margin || 0};
-  background-color: ${({ bg }) => bg || "#fff"};
-  color: ${({ color, theme }) => color || theme.colors.button};
   display: flex;
   align-items: center;
   justify-content: ${({ justify }) => justify || "center"};
+
   & > img {
     padding-left: 11px;
     width: 30px;
     height: 11px;
   }
 
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     width: 100%;
   }
 `;
+
+export const Button = styled(ButtonBase)`
+  border: 1px solid
+    ${({ border }: Button) => (border && "black") || "transparent"};
+  color: ${({ colorBlack }) => (colorBlack && "black") || "#fff"};
+  background-color: ${({ bgWhite }) => (bgWhite && "#fff") || "black"};
+`;
+
+export const ButtonTransparent = styled(ButtonBase)`
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #fff;
+`;
+
+export const ButtonPink = styled(ButtonBase)`
+  background-color: #f0004c;
+  border: 1px solid #f0004c;
+  color: #fff;
+`;
+

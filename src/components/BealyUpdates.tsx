@@ -6,6 +6,8 @@ import line from "../assets/bealy-updates/line.svg";
 import leftClock from "../assets/bealy-updates/left-clock.svg";
 import rightClock from "../assets/bealy-updates/right-clock.svg";
 import { ContainerS } from "./helpers/Container";
+import { device } from "../theme/device";
+
 export default function ContactCareTeam() {
   return (
     <>
@@ -19,19 +21,14 @@ export default function ContactCareTeam() {
           <P align="center" color="#fff" padding="64px 0 16px">
             PARTENAIRE POUR VOTRE SANTÉ CONNECTÉE
           </P>
-          <H2 align="center" padding="0 30px" color="#fff">
+          <H2 align="center" padding="0 30px" white>
             Fitbit X Bealy
           </H2>
           <P align="center" color="#fff" padding="64px 0 64px">
             Pour en savoir plus sur les avantages du partenariat entre Fitbit &
             Bealy, contactez notre équipe commerciale.
           </P>
-          <Button
-            bg="#fff"
-            color="black"
-            margin="0 auto 45px"
-            padding="16px 80px"
-          >
+          <Button bgWhite colorBlack margin="0 auto 45px" padding="16px 80px">
             En savoir plus
           </Button>
         </div>
@@ -81,7 +78,7 @@ const Container = styled.div`
     right: 20px;
   }
 
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     height: 965px;
     max-width: 375px;
     align-items: start;
@@ -89,9 +86,9 @@ const Container = styled.div`
     margin: 36px auto;
 
     & > div {
-        & > button {
-            width: 80%;
-        }
+      & > button {
+        width: 80%;
+      }
     }
     & > img:nth-child(2) {
       top: 45px;

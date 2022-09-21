@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../theme/device";
 
 interface Props {
   id: number;
@@ -12,8 +13,11 @@ export default function ProCard({ title, image, description }: Props) {
     <ProCardS>
       <Image>
         <img
-          src={`${import.meta.env.VITE_BASE_URL}assets/pro-advantages/${image}.svg`}
-          alt="image"/>
+          src={`${
+            import.meta.env.VITE_BASE_URL
+          }assets/pro-advantages/${image}.svg`}
+          alt="image"
+        />
       </Image>
       <h5>{title}</h5>
       <p>{description}</p>
@@ -34,7 +38,7 @@ const ProCardS = styled.div`
     margin-top: 16px;
   }
 
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     grid-template-columns: auto;
     grid-row-gap: 24px;
     padding: 0;

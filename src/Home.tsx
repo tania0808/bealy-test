@@ -24,9 +24,9 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      {/*<ContainerS>
+      <ContainerS>
         <HealthPartner />
-        <Slider/>
+        {/* <Slider/>
         <Offers />
         <ProSection />
         <EmployeeEquipment />
@@ -42,11 +42,11 @@ const Home = () => {
       </ContainerS>
       <ContainerS>
         <BealyUpdates />
-        <BealyApp />
+        <BealyApp />*/}
       </ContainerS>
-      <SimplifyManagement /> */}
+      <SimplifyManagement />  
       <ContainerS>
-        <PersonalizedSupport />
+        <PersonalizedSupport/>
       </ContainerS>
     </>
   );

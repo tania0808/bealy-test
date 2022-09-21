@@ -21,7 +21,7 @@ export default function OfferCard({ title, image, description }: Props) {
         />
       </Image>
       <p>{description}</p>
-      <Button margin="56px 0 21px 0" bg="black" color="#fff">
+      <Button margin="56px 0 21px 0">
         Trouver mon assurance
       </Button>
       <a href="#">Échangez avec un conseiller</a>

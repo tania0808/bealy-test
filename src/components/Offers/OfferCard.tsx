@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../helpers/Button.styled";
+import { Button, ButtonPink } from "../helpers/Button.styled";
 import {H4} from '../helpers/Utils.styled'
 interface Props {
   id: number;
@@ -26,14 +26,7 @@ export default function OfferCard({
       <span></span>
       <H4 padding="40px 0 8px">{title}</H4>
       <p>{description}</p>
-      <Button
-        margin="56px 0"
-        bg={id % 2 === 0 ? "#f0004c" : "black"}
-        border={id % 2 === 0 ? "#f0004c" : "black"}
-        color="#fff"
-      >
-        {slogan}
-      </Button>
+      {id % 2 === 0 ? <ButtonPink margin="10px">{slogan}</ButtonPink> : <Button margin="10px">{slogan}</Button>}
     </OfferCardS>
   );
 }

@@ -13,7 +13,7 @@ export default function EmployeeEquipment() {
             L’accès à la santé n’a jamais été aussi simple
           </p>
           <Flex>
-            <Button bg="black" color="#fff">
+            <Button>
               Ouvrir un compte entreprise
             </Button>
           </Flex>

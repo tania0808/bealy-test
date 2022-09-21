@@ -15,7 +15,7 @@ type Data = {
 }
 
 export default function Images({icons, width}: Data) {
-
+  
   return (
     <>
       {icons.map((icon: Icon, index: number) => {

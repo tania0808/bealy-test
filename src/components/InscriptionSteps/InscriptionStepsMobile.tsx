@@ -5,6 +5,7 @@ import styled from "styled-components";
 import inscriptionStepsJSON from "../../data/inscription-steps.json";
 import AccordionItem from "../HealthAssistance/AccordionItem";
 import { FlexItem } from "../helpers/Utils.styled";
+import { device } from "../../theme/device";
 
 interface AccordionItem {
   id: number;
@@ -16,25 +17,27 @@ export default function HealthAssistance() {
   const [inscriptionSteps] = useState(inscriptionStepsJSON);
 
   return (
-      <Mobile>
-        <PreHeader>
-          <img src={teleconsultation} alt="" />
-          Une équipe santé aux petits soins pour vos salariés
-        </PreHeader>
-        <Flex padding="0 0 0 50px">
-          <div>
-              <h4>Une équipe santé aux petits soins pour vos salariés</h4>
-            {inscriptionSteps.map((item: AccordionItem, index: number) => {
-              return <AccordionItem key={index} {...item} folder="inscription-steps"/>;
-            })}
-          </div>
-        </Flex>
-      </Mobile>
+    <Mobile>
+      <PreHeader>
+        <img src={teleconsultation} alt="" />
+        Une équipe santé aux petits soins pour vos salariés
+      </PreHeader>
+      <Flex padding="0 0 0 50px">
+        <div>
+          <h4>Une équipe santé aux petits soins pour vos salariés</h4>
+          {inscriptionSteps.map((item: AccordionItem, index: number) => {
+            return (
+              <AccordionItem key={index} {...item} folder="inscription-steps" />
+            );
+          })}
+        </div>
+      </Flex>
+    </Mobile>
   );
 }
 const Mobile = styled.div`
   display: none;
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     display: block;
   }
 `;

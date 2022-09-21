@@ -1,9 +1,9 @@
 import { Flex } from "./helpers/Flex.styled";
 import { H3, H2, P, H6 } from "./helpers/Utils.styled";
 import styled from "styled-components";
-import { Button } from "./helpers/Button.styled";
+import { ButtonTransparent } from "./helpers/Button.styled";
 import arrowRightWhite from "./../assets/arrow-right.svg";
-
+import { device } from "../theme/device";
 import phones from "../assets/bealy-app/phones.svg";
 import attentionIcon from "../assets/bealy-app/attention-icon.svg";
 import influencer from "../assets/bealy-app/influencer.svg";
@@ -28,16 +28,11 @@ export default function BealyApp() {
           </Flex>
         </App>
         <MoreInfo>
-          <Button
-            bg="transparent"
-            border="transparent"
-            color="#fff"
-            justify="end"
-          >
+          <ButtonTransparent justify="end" margin="10px 0">
             <P color="#fff"> En savoir plus</P>{" "}
             <img src={arrowRightWhite} alt="" />
-          </Button>
-          <H2 color="#fff" padding="516px 60px 24px 40px">
+          </ButtonTransparent>
+          <H2 white padding="516px 60px 24px 40px">
             Bealy l'assurance santé qui fait simple
           </H2>
         </MoreInfo>
@@ -50,7 +45,7 @@ const Item = styled.div`
   border-radius: 32px;
   max-width: 475px;
   box-sizing: border-box;
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     max-width: 375px;
   }
 `;

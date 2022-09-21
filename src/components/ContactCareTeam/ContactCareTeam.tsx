@@ -19,7 +19,7 @@ export default function ContactCareTeam() {
           Que ce soit pour faire le point sur vos besoins ou vous présenter nos
           fonctionnalités.
         </P>
-        <Button bg="black" color="#fff" margin="0 auto">
+        <Button margin="0 auto">
           Prendre rendez-vous<p> &nbsp; avec l’équipe Careteam </p>
         </Button>
         <Images icons={icons} width="80px" />

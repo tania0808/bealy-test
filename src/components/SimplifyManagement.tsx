@@ -4,6 +4,7 @@ import { Flex } from "./helpers/Flex.styled";
 import { Button } from "./helpers/Button.styled";
 import styled from "styled-components";
 import { H2 } from "./helpers/Utils.styled";
+import { device } from "../theme/device";
 
 export default function SimplifyManagement() {
   return (
@@ -18,9 +19,7 @@ export default function SimplifyManagement() {
             santé est dans votre poche !
           </p>
           <Flex>
-            <Button bg="black" color="#fff">
-              Prenez rendez-vous avec un conseiller
-            </Button>
+            <Button>Prenez rendez-vous avec un conseiller</Button>
           </Flex>
         </div>
         <Image>
@@ -58,7 +57,7 @@ const Container = styled.div`
     margin: 0 auto;
   }
 
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     padding-top: 100px;
     & > img {
       position: absolute;

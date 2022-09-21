@@ -9,6 +9,8 @@ import Tabs from "./Tabs";
 import { FlexItem } from "../helpers/Utils.styled";
 import { H4 } from "../helpers/Utils.styled";
 import arrowRight from "../../assets/arrow-right.svg";
+import { device } from "../../theme/device";
+
 export default function HealthAssistance() {
   const [healthAssistance] = useState(healthAssistanceJSON);
   const [value, setValue] = useState(0);
@@ -28,7 +30,7 @@ export default function HealthAssistance() {
             activeId={value}
           />
 
-          <Button bg="black" color="#fff" margin="40px 0 0 0">
+          <Button margin="40px 0 0 0">
             Découvrir les offres <img src={arrowRight} alt="" />
           </Button>
         </div>
@@ -47,7 +49,7 @@ export default function HealthAssistance() {
 
 const Desktop = styled.div`
   display: block;
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     display: none;
   }
 `;

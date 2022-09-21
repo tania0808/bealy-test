@@ -10,46 +10,52 @@ import arrowRightBlack from "../../assets/arrow-right-black.svg";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { FlexItem } from "../helpers/Utils.styled";
 import { H4 } from "../helpers/Utils.styled";
+import { device } from "../../theme/device";
 export default function HealthAssistance() {
   const [inscriptionSteps] = useState(inscriptionStepsJSON);
   const [value, setValue] = useState(0);
 
   return (
-      <Desktop>
-        <Flex padding="0 50px 0 0" direction="row-reverse">
-          <div>
-            <PreHeader>
-              <img src={heart} alt="" />
-              Équipez vos salariés en moins de {" "}
-              <ColoredSpan color="rgb(0, 187, 242)"> {" "} 5 minutes !</ColoredSpan>{" "}
-            </PreHeader>
-              <H4 padding="24px 0 0">Une équipe santé aux petits soins pour vos salariés</H4>
-            <Tabs
-              items={inscriptionSteps}
-              onHandleClick={setValue}
-              activeId={value}
-            />
-            <Button bg="#fff" color="black" margin="40px 0 0 0">
-              Découvrir les offres <img src={arrowRightBlack} alt="" />
-            </Button>
-          </div>
-          <div>
-            <Image
-              src={`${import.meta.env.VITE_BASE_URL}assets/inscription-steps/${
-                inscriptionSteps[value].image
-              }.svg`}
-              alt=""
-            />
-          </div>
-        </Flex>
-      </Desktop>
+    <Desktop>
+      <Flex direction="row-reverse">
+        <div>
+          <PreHeader>
+            <img src={heart} alt="" />
+            Équipez vos salariés en moins de{" "}
+            <ColoredSpan color="rgb(0, 187, 242)">
+              {" "}
+              5 minutes !
+            </ColoredSpan>{" "}
+          </PreHeader>
+          <H4 padding="24px 0 0">
+            Une équipe santé aux petits soins pour vos salariés
+          </H4>
+          <Tabs
+            items={inscriptionSteps}
+            onHandleClick={setValue}
+            activeId={value}
+          />
+          <Button bgWhite colorBlack border margin="40px 0 0 0">
+            Contacter l’équipe commerciale <img src={arrowRightBlack} alt="" />
+          </Button>
+        </div>
+        <div>
+          <Image
+            src={`${import.meta.env.VITE_BASE_URL}assets/inscription-steps/${
+              inscriptionSteps[value].image
+            }.svg`}
+            alt=""
+          />
+        </div>
+      </Flex>
+    </Desktop>
   );
 }
 
 const Desktop = styled.div`
   display: block;
   margin-top: 220px;
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     display: none;
   }
 `;
@@ -63,5 +69,5 @@ const PreHeader = styled(FlexItem)`
 `;
 
 const Image = styled.img`
-margin-right: 1rem;
-`
+  margin-right: 1rem;
+`;

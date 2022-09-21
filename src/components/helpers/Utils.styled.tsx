@@ -4,13 +4,14 @@ import { device } from "../../theme/device";
 interface IHeading {
   align?: string;
   padding?: string;
-  color?:string;
+  special?:string;
+  white?: any;
 }
 export const Heading = styled.h1<IHeading>`
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
   font-weight: 700;
-  color: ${({ color }) => (color ? color : "black")};
+  color: ${(props: IHeading ) => props.white && "white"};
 `;
 
 export const H2 = styled(Heading)`
@@ -22,6 +23,7 @@ export const H2 = styled(Heading)`
     line-height: 42px;
   }
 `;
+
 export const H3 = styled(Heading)`
   font-size: 36px;
   line-height: 42px;

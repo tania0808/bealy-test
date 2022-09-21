@@ -9,6 +9,7 @@ import healthAssistanceJSON from "../../data/health-assistance.json";
 import Tabs from "./Tabs";
 import AccordionItem from "./AccordionItem";
 import { FlexItem } from "../helpers/Utils.styled";
+import { device } from "../../theme/device";
 
 interface AccordionItem {
   id: number;
@@ -40,7 +41,7 @@ export default function HealthAssistance() {
 }
 const Mobile = styled.div`
   display: none;
-  @media (max-width: 950px) {
+  @media ${device.phone} {
     display: block;
   }
 `;

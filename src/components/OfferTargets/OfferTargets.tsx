@@ -7,6 +7,7 @@ import targetsJSON from "../../data/offer-targets.json";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import { H4 } from "../helpers/Utils.styled";
+import { device } from "../../theme/device";
 export default function OfferTargets() {
   const [targets] = useState(targetsJSON);
 
@@ -17,13 +18,11 @@ export default function OfferTargets() {
         <img src={bealyAssurance} alt="" />
       </ImageContainer>
       <>
-          <H4 align="center">
-            Bealy c’est aussi des offres{" "}
-            <ColoredSpan>
-              d’assurance et de prévoyance {" "}
-            </ColoredSpan>
-             adaptées à vos besoins
-          </H4>
+        <H4 align="center">
+          Bealy c’est aussi des offres{" "}
+          <ColoredSpan>d’assurance et de prévoyance </ColoredSpan>
+          adaptées à vos besoins
+        </H4>
         <GridContainer>
           {targets.map((item) => {
             return <TargetCard key={item.id} {...item} />;
@@ -46,7 +45,7 @@ const ImageContainer = styled.div`
       position: absolute;
       top: -105px;
       right: 430px;
-      @media (max-width: 950px) {
+      @media ${device.phone} {
         display: none;
       }
     }
