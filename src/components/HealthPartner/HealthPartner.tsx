@@ -4,7 +4,7 @@ import { ColoredSpan } from "../helpers/ColoredSpan";
 import { Button } from "../helpers/Button.styled";
 import { H2 } from "../helpers/Utils.styled";
 
-import healthPartners from "../../assets/health-partners.svg";
+import healthPartners from "../../assets/health-partners.png";
 
 const HealthPartner = () => {
   return (

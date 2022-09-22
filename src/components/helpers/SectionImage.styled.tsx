@@ -12,7 +12,8 @@ export const SectionImage = styled.div<ImageWrapper>`
   display: flex;
   justify-content: center;
   & > img {
-    width: 90%;
+    width: 100%;
+    object-fit: contain;
   }
   @media ${device.phone} {
     margin: ${({ marginMobile }) => marginMobile ? marginMobile : 0};
