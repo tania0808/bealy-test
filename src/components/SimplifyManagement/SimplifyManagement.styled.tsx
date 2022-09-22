@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
   & > img {
     position: absolute;
-    top: 110px;
+    top: 45px;
     right: 46%;
     width: 50px;
   }
