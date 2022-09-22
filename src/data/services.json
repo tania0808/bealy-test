@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "chat",
+    "title": "Parlez à un médecin par chat"
+  },
+  {
+    "id": 2,
+    "image": "treatement",
+    "title": "Prise en charge"
+  },
+  {
+    "id": 3,
+    "image": "well-being",
+    "title": "Bien être"
+  },
+  {
+    "id": 4,
+    "image": "chat",
+    "title": "Parlez à un médecin par chat"
+  },
+  {
+    "id": 5,
+    "image": "treatement",
+    "title": "Prise en charge"
+  },
+  {
+    "id": 6,
+    "image": "well-being",
+    "title": "Bien être"
+  },
+  {
+    "id": 7,
+    "image": "chat",
+    "title": "Parlez à un médecin par chat"
+  },
+  {
+    "id": 8,
+    "image": "treatement",
+    "title": "Prise en charge"
+  },
+  {
+    "id": 9,
+    "image": "well-being",
+    "title": "Bien être"
+  }
+]

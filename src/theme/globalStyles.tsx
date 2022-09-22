@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Trenda from "./Trenda.woff";
 import Gilroy from "./Gilroy.woff";
-import { device } from './device';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {

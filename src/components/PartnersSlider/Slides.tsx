@@ -1,14 +1,11 @@
-import { useState } from "react";
 import { Slide } from "./Slider.styled";
-
 import partnersJSON from "../../data/partners.json";
 
-export default function Slides() {
-  const [partners] = useState(partnersJSON);
 
+export default function Slides() {
   return (
     <>
-      {partners.map((logo: any) => {
+      {partnersJSON.map((logo: any) => {
         return (
           <Slide key={logo.id}>
             <img

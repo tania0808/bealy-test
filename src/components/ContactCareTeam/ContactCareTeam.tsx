@@ -1,13 +1,12 @@
-import { H2 } from "../helpers/Utils.styled";
-import { Button } from "../helpers/Button.styled";
-import styled from "styled-components";
-import { P } from "../helpers/Utils.styled";
+import { Wrapper } from './ContactCareTeam.styled';
 import Images from "./Images";
-import { device } from "../../theme/device";
+import { H2, P } from "../helpers/Utils.styled";
+import { Button } from "../helpers/Button.styled";
+import contactCareteamJSON from "../../data/contact-careteam.json";
 
 export default function ContactCareTeam() {
   return (
-    <ContactCareTeamS>
+    <Wrapper>
       <div>
         <H2 align="center" padding="0 30px">
           Des questions ? Nos équipes vous répondent
@@ -16,61 +15,12 @@ export default function ContactCareTeam() {
           Que ce soit pour faire le point sur vos besoins ou vous présenter nos
           fonctionnalités.
         </P>
-        <Button bg="black" color="#fff" margin="0 auto">
+        <Button margin="0 auto" width="70%">
           Prendre rendez-vous<p> &nbsp; avec l’équipe Careteam </p>
         </Button>
-        <Images />
+        <Images icons={contactCareteamJSON} width="80px" />
       </div>
-    </ContactCareTeamS>
+    </Wrapper>
   );
 }
 
-const ContactCareTeamS = styled.div`
-  max-height: 620px;
-  max-width: 930px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 228px auto;
-
-  & > div {
-    padding: 50px 0;
-    position: relative;
-    text-align: center;
-    width: 70%;
-
-    & > h2 {
-      padding: 0 !important;
-    }
-
-    & > button {
-      margin: 0 auto;
-      width: 70%;
-    }
-  }
-  @media ${device.phone} {
-    max-height: 300px;
-    width: 100%;
-    margin: 228px auto;
-
-    & > div {
-      padding: 0;
-      width: 100%;
-      height: 381px;
-
-      &:nth-child(7) {
-        display: none;
-      }
-
-      & > button {
-        margin: 0;
-        width: 100%;
-
-      & > p {
-        display: none;
-      }
-      }
-    }
-  }
-`;

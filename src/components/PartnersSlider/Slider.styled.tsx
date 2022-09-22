@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
+
 const scroll = keyframes`
 0% {
     transform: translateX(0);
@@ -40,7 +41,7 @@ export const Slide = styled(FlexItem)`
     transition: transform 0.5s;
     object-fit: contain;
   }
-
+  
   &:hover {
     img {
       transform: translateZ(20px);

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Home from "./Home";
 import GlobalStyle  from './theme/globalStyles'
 import { ThemeProvider } from "styled-components";
