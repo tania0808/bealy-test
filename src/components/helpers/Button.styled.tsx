@@ -9,6 +9,7 @@ interface Button {
   justify?: string;
   border?: any;
   width?: string;
+  align?: string;
 }
 
 export const ButtonBase = styled.button<Button>`
@@ -18,7 +19,7 @@ export const ButtonBase = styled.button<Button>`
   margin: ${({ margin }) => margin || 0};
   width: ${({ width }) => width};
   display: flex;
-  align-items: center;
+  align-items: ${({ align }) => align || "center"};
   justify-content: ${({ justify }) => justify || "center"};
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -50,7 +51,7 @@ export const Button = styled(ButtonBase)`
 export const ButtonTransparent = styled(ButtonBase)`
   background-color: transparent;
   border: 1px solid transparent;
-  color: #fff;
+  color: ${({ colorBlack }) => (colorBlack && "black") || "#fff"};
 `;
 
 export const ButtonPink = styled(ButtonBase)`

@@ -19,6 +19,7 @@ export const Flex = styled.div<IFlex>`
   margin-top: ${({ margin }) => (margin ? margin : "1rem")};
   gap: ${({ gap }) => gap};
   height: 100%;
+  width: 100%;
 
   & > div {
     flex: 1;

@@ -17,7 +17,7 @@ import BealyUpdates from "./components/BealyUpdates/BealyUpdates";
 import BealyApp from "./components/BealyApp/BealyApp";
 import SimplifyManagement from "./components/SimplifyManagement/SimplifyManagement";
 import { PersonalizedSupport } from "./components/PersonalizedSupport/PersonalizedSupport";
-
+import Testimonials from "./components/Testimonials/Testimonials";
 const Home = () => {
   return (
     <>
@@ -32,7 +32,6 @@ const Home = () => {
         <TechPower />
         <VirtualClinic />
         <HealthAssistanceDesktop />
-       
         <InscriptionStepsDesktop />
         <Statistics />
         <ContactCareTeam />
@@ -44,6 +43,8 @@ const Home = () => {
       <SimplifyManagement />  
       <ContainerS>
         <PersonalizedSupport/>
+        <Testimonials/>
+        <Slider/>
       </ContainerS>
     </>
   );

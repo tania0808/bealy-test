@@ -17,7 +17,7 @@ export default function EmployeeEquipment() {
           <Button>Ouvrir un compte entreprise</Button>
         </Flex>
       </div>
-      <SectionImage margin="100px 0 ">
+      <SectionImage>
         <img src={phoneXCard} alt="phoneXCard" />
       </SectionImage>
     </Flex>

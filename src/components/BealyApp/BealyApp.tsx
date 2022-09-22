@@ -31,8 +31,9 @@ export default function BealyApp() {
           </Flex>
         </App>
         <MoreInfo>
-          <ButtonTransparent justify="end" margin="10px 0"> En savoir plus{" "}
-            <img src={arrowRightWhite} alt="" />
+          <ButtonTransparent justify="end" margin="10px 0">
+            {" "}
+            En savoir plus <img src={arrowRightWhite} alt="" />
           </ButtonTransparent>
           <H2 white padding="516px 60px 24px 40px">
             Bealy l'assurance santé qui fait simple
