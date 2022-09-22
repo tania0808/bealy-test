@@ -20,15 +20,15 @@
     "image": "well-being",
     "topD": "70%",
     "leftD": "13%",
-    "topM": "80%",
-    "leftM": "10%"
+    "topM": "85%",
+    "leftM": "6%"
   },
   {
     "id": 4,
     "image": "mental-health",
     "topD": "47%",
     "leftD": "90%",
-    "topM": "62%",
+    "topM": "60%",
     "leftM": "81%"
   },
   {

@@ -1,15 +1,13 @@
 import starDrawing from "../../assets/star-drawing.svg";
 import bealyAssurance from "../../assets/bealy-assurance.svg";
-import { useState } from "react";
-import styled from "styled-components";
 import TargetCard from "./TargetCard";
-import targetsJSON from "../../data/offer-targets.json";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import { H4 } from "../helpers/Utils.styled";
-import { device } from "../../theme/device";
+import targetsJSON from "../../data/offer-targets.json";
+import { ImageContainer } from './OfferTargets.styled'
+
 export default function OfferTargets() {
-  const [targets] = useState(targetsJSON);
 
   return (
     <>
@@ -24,7 +22,7 @@ export default function OfferTargets() {
           adaptées à vos besoins
         </H4>
         <GridContainer>
-          {targets.map((item) => {
+          {targetsJSON.map((item) => {
             return <TargetCard key={item.id} {...item} />;
           })}
         </GridContainer>
@@ -33,21 +31,3 @@ export default function OfferTargets() {
   );
 }
 
-const ImageContainer = styled.div`
-  position: relative;
-  display: block;
-  margin-bottom: 24px;
-  margin-top: 120px;
-  & > img {
-    display: block;
-    margin: 0 auto;
-    &:nth-child(1) {
-      position: absolute;
-      top: -105px;
-      right: 430px;
-      @media ${device.phone} {
-        display: none;
-      }
-    }
-  }
-`;

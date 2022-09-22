@@ -8,6 +8,7 @@ interface Button {
   padding?: string;
   justify?: string;
   border?: any;
+  width?:string;
 }
 
 export const ButtonBase = styled.button<Button>`
@@ -15,6 +16,7 @@ export const ButtonBase = styled.button<Button>`
   padding: ${({ padding }) => padding || "10px 27px"};
   font-weight: 600;
   margin: ${({ margin }) => margin || 0};
+  width: ${({ width }) => width};
   display: flex;
   align-items: center;
   justify-content: ${({ justify }) => justify || "center"};

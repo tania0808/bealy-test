@@ -1,4 +1,4 @@
-import {IconBox} from '../helpers/CareIcon.styled'
+import { IconBox } from "../helpers/CareIcon.styled";
 
 interface Icon {
   id: number;
@@ -10,12 +10,11 @@ interface Icon {
 }
 
 type Data = {
-  icons: Icon []
-  width: string
-}
+  icons: Icon[];
+  width: string;
+};
 
-export default function Images({icons, width}: Data) {
-  
+export default function Images({ icons, width }: Data) {
   return (
     <>
       {icons.map((icon: Icon, index: number) => {
@@ -40,13 +39,3 @@ export default function Images({icons, width}: Data) {
     </>
   );
 }
-
-interface IconBoxI {
-  topD: string;
-  leftD: string;
-  device?: string;
-  topM: string;
-  leftM: string
-}
-
-

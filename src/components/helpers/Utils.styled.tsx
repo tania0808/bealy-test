@@ -6,10 +6,12 @@ interface IHeading {
   padding?: string;
   special?:string;
   white?: any;
+  top?:string
 }
 export const Heading = styled.h1<IHeading>`
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
+  margin-top: ${({ top }) => (top ? top : "0")};
   font-weight: 700;
   color: ${(props: IHeading ) => props.white && "white"};
 `;
@@ -44,6 +46,7 @@ export const H6 = styled(Heading)`
 interface IPar {
   align?: string;
   padding?: string;
+  margin?: string;
   color?:string
 }
 export const P = styled.p<IPar>`
@@ -52,6 +55,7 @@ export const P = styled.p<IPar>`
   color: ${({theme, color}) => (color ? color : theme.colors.black_600)};
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
+  margin: ${({ margin }) => (margin ? margin : "0")};
 `;
 
 interface ILink {
@@ -69,9 +73,25 @@ export const Link = styled.a<ILink>`
 
 interface IflexItem {
   justify?: string;
+  align?: string;
+  direction?: string;
+  width?: string;
+  margin?: string;
 }
 export const FlexItem = styled.div<IflexItem>`
   display: flex;
-  align-items: center;
+  @media ${device.bigDesk} {
+    width: ${({ width }) => (width ? width : "100%")};
+  }
+  align-items: ${({ align }) => (align ? align : "center")};
   justify-content: ${({ justify }) => (justify ? justify : "start")};
+  flex-direction: ${({ direction }) => (direction ? direction : "row")};
+  margin:${({ margin }) => (margin )};
+`;
+
+
+export const HorizontalBar = styled.span`
+  height: 1px;
+  background-color: ${({ theme }) => theme.colors.light_grey};
+  margin: 0 35px;
 `;

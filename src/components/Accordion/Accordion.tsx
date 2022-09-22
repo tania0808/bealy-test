@@ -1,9 +1,29 @@
 import React from "react";
-import styled from "styled-components";
-import { Button } from "../helpers/Button.styled";
-import arrowRight from "../../assets/arrow-right.svg";
+import AccordionItem from "./AccordionItem";
+interface AccProps {
+  items: any[];
+}
+interface AccordionItem {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+}
 
-interface TabProps {
+export default function Accordion({ items }: AccProps) {
+  return (
+    <>
+      {items.map((item: AccordionItem, index: number) => {
+        return (
+          <AccordionItem key={index} {...item} folder="health-assistance" />
+        );
+      })}
+    </>
+  );
+}
+
+/**
+ * interface TabProps {
   items: any[];
   activeId: number;
   onHandleClick: (value: number) => void;
@@ -15,7 +35,7 @@ interface Tab {
   image: string;
   description: string;
 }
-export default function Tabs({ items, onHandleClick, activeId }: TabProps) {
+ export default function Tabs({ items, onHandleClick, activeId }: TabProps) {
   return (
     <>
       <TabMenu>
@@ -76,3 +96,5 @@ margin-top: 10px;
     color: ${({ theme}) => theme.colors.black_600};
   }
 `;
+
+ */

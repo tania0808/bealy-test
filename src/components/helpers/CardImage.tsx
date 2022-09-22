@@ -8,6 +8,22 @@ interface CardImageProps {
   margin?: string;
 }
 
+export const HorizontalBar = styled.span`
+  height: 1px;
+  background-color: ${({ theme }) => theme.colors.light_grey};
+  margin: 0 35px;
+`;
+
+const Image = styled.div`
+  max-width: 100%;
+  margin: 40px 0 64px;
+
+  & > img {
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
+
 export const CardImage = styled.div<CardImageProps>`
   display: flex;
   height: ${({ height }) => height};
@@ -19,8 +35,10 @@ export const CardImage = styled.div<CardImageProps>`
   }
 `;
 
+const CardsWrapper = styled.div`
+  height: 100%;
+`;
 
-/*
 export const OfferCardS = styled.div`
   height: 100%;
   display: flex;
@@ -34,12 +52,7 @@ export const OfferCardS = styled.div`
 
   padding: 0 24px;
 
-  & > span {
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.light_grey};
-    margin: 0 35px;
-  }
-
+  
   & > h4 {
     margin-top: 40px;
   }
@@ -55,10 +68,7 @@ const ProCardS = styled.div`
   margin: 0 auto;
   max-width: 191px;
 
-  & > h5 {
-    margin-top: 40px;
-  }
-
+  
   & > p {
     margin-top: 16px;
   }
@@ -72,8 +82,8 @@ const ProCardS = styled.div`
   }
 `;
 
-
 const OfferCardST = styled.div`
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,21 +96,7 @@ const OfferCardST = styled.div`
   text-align: center;
   padding: 0 24px;
 
-  & > span {
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.light_grey};
-    margin: 0 35px;
-  }
-
-  & > h5 {
-    margin-top: 40px;
-  }
-
-  & > p {
-    margin-top: 8px;
-    color: ${({ theme }) => theme.colors.black_700};
-  }
-
+ 
   & > a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.blue};
@@ -109,17 +105,10 @@ const OfferCardST = styled.div`
   }
 `;
 
-********** statistic 
-
 const StatisticItemS = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 24px;
 
-  & > p {
-    color: ${({ theme }) => theme.colors.black_600};
-  }
 `;
-
-*/

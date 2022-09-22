@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FlexItem } from "./Utils.styled";
 import { device } from "../../theme/device";
 
 interface IFlex {
@@ -12,7 +11,7 @@ interface IFlex {
   mobileDirection?: string;
 }
 
-export const Flex = styled(FlexItem)<IFlex>`
+export const Flex = styled.div<IFlex>`
   display: flex;
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
   justify-content: ${({ justify }) => justify || "space-between"};
@@ -30,4 +29,14 @@ export const Flex = styled(FlexItem)<IFlex>`
     flex-direction: ${({ mobileDirection }) =>
       mobileDirection ? mobileDirection : "column"};
   }
+`;
+
+
+interface IFlexColumn {
+  padding?:string;
+}
+export const FlexColumn = styled.div<IFlexColumn>`
+  display: flex;
+  flex-direction: column;
+  padding: ${({ padding }) => padding};
 `;

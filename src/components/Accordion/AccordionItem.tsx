@@ -3,7 +3,9 @@ import arrowRight from "../../assets/arrow-simple-right.svg";
 import arrowDown from "../../assets/arrow-simple-down.svg";
 import { Flex } from "../helpers/Flex.styled";
 import styled from "styled-components";
-
+import {SectionImage} from '../helpers/Image.styled'
+import {H6, P} from '../helpers/Utils.styled'
+import healthAssistanceJSON from "../../data/health-assistance.json";
 interface AccordionItem {
   title: string;
   image: string;
@@ -25,14 +27,14 @@ export default function AccordionItem({
     <>
       <AccordionHeader>
         <div>
-          <h5>{title}</h5>
-          <p onClick={toggleButton}>
+          <H6>{title}</H6>
+          <P onClick={toggleButton}>
             {isOpen ? (
               <img src={arrowDown} alt="arrow down" />
             ) : (
               <img src={arrowRight} alt="arrow right" />
             )}
-          </p>
+          </P>
         </div>
         <p>{description}</p>
       </AccordionHeader>
@@ -64,20 +66,13 @@ const AccordionHeader = styled.div`
   flex-direction: column;
   margin-top: 24px;
   & > p {
-    margin-top: 16px;
     color: ${({ theme }) => theme.colors.black_600};
   }
-  & > p {
-    margin: 0;
-  }
+
   & > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
-    & > h5 {
-      margin-bottom: 8px;
-      color: ${({ theme }) => theme.colors.black_800};
-    }
   }
 `;

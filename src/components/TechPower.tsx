@@ -1,7 +1,7 @@
 import { Flex } from "./helpers/Flex.styled";
 import { H2 } from "./helpers/Utils.styled";
 import techPower from "../assets/tech-power.svg";
-import { Image } from "./helpers/Image.styled";
+import { SectionImage } from "./helpers/Image.styled";
 import { Button } from "./helpers/Button.styled";
 
 const TechPower = () => {
@@ -29,7 +29,9 @@ const TechPower = () => {
         </Flex>
       </div>
       <div>
-        <Image src={techPower} />
+        <SectionImage>
+          <img src={techPower} alt="" />
+        </SectionImage>
       </div>
     </Flex>
   );

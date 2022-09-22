@@ -1,5 +1,5 @@
 import { Flex } from "./helpers/Flex.styled";
-import { Image } from "./helpers/Image.styled";
+import { SectionImage } from "./helpers/Image.styled";
 import { ColoredSpan } from "./helpers/ColoredSpan";
 import { Button } from "./helpers/Button.styled";
 import { H2 } from "./helpers/Utils.styled";
@@ -31,7 +31,9 @@ const HealthPartner = () => {
         </Flex>
       </div>
       <div>
-        <Image src={healthPartners} />
+        <SectionImage>
+          <img src={healthPartners} alt="" />
+        </SectionImage>
       </div>
     </Flex>
   );
