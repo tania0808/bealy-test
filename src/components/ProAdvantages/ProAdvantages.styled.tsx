@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { device } from "../../theme/device";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.button};
+`;
+
+export const Section = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
   color: #fff;
   text-align: center;
-  padding: 56px 0; 
+  padding: 56px 0;
   margin-top: 220px;
 
   & > div {
