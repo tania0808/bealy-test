@@ -28,8 +28,8 @@ const Home = () => {
         <Offers />
       </ContainerS>
 
-      <ProSection />
 
+      <ProSection />
       <ContainerS>
         <EmployeeEquipment />
         <OfferTargets />
