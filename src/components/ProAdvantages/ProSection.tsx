@@ -1,7 +1,7 @@
+import { Wrapper } from "./ProAdvantages.styled";
 import ProCard from "./ProCard";
 import { H4 } from "../helpers/Utils.styled";
 import proJSON from "../../data/pro-advantages.json";
-import { Wrapper } from "./ProAdvantages.styled";
 
 export default function ProSection() {
   return (

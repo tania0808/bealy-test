@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { device } from "../../theme/device";
 
 export const ImageContainer = styled.div`

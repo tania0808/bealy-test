@@ -1,14 +1,14 @@
 import { useState } from "react";
-import teleconsultation from "../../assets/teleconsultation.svg";
+import { Desktop, Mobile } from "../helpers/Display.styled";
+import ComplexHeading from "../ComplexHeading/ComplexHeading";
 import { FlexItem } from "../helpers/Flex.styled"; 
 import { Button } from "../helpers/Button.styled";
-import healthAssistanceJSON from "../../data/health-assistance.json";
-import Tabs from "../Tabs/Tabs";
-import arrowRight from "../../assets/arrow-right.svg";
-import ComplexHeading from "../ComplexHeading/ComplexHeading";
 import { CardImage } from "../helpers/CardImage";
 import Accordion from "../Accordion/Accordion";
-import { Desktop, Mobile } from "../helpers/Display.styled";
+import Tabs from "../Tabs/Tabs";
+import arrowRight from "../../assets/arrow-right.svg";
+import teleconsultation from "../../assets/teleconsultation.svg";
+import healthAssistanceJSON from "../../data/health-assistance.json";
 
 export default function HealthAssistance() {
   const [healthAssistance] = useState(healthAssistanceJSON);

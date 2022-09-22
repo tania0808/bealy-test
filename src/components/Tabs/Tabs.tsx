@@ -1,4 +1,5 @@
-import { TabMenu, TabItem } from './Tabs.styled'
+import { TabMenu, TabItem } from './Tabs.styled';
+
 interface TabProps {
   items: any[];
   activeId: number;

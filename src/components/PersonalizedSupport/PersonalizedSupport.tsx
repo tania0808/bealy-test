@@ -1,10 +1,10 @@
-import { Flex } from "../helpers/Flex.styled";
+import { Wrapper, MoreInfoContainer, TwoItemsContainer, Icons, GradientContainer } from './PersonalizedSupport.styled'
 import { Button } from "../helpers/Button.styled";
 import { H4, H5, P } from "../helpers/Utils.styled";
 import Images from "../ContactCareTeam/Images";
-import personalizedSupportJSON from "../../data/personalized-support.json";
 import cardAssurance from "../../assets/card-assurance.svg";
-import { Wrapper, MoreInfoContainer, TwoItemsContainer, Icons, GradientContainer } from './PersonalizedSupport.styled'
+import personalizedSupportJSON from "../../data/personalized-support.json";
+
 export function PersonalizedSupport() {
   return (
     <Wrapper>

@@ -2,6 +2,7 @@ import { Button, ButtonPink } from "../helpers/Button.styled";
 import { H4, P, HorizontalBar } from "../helpers/Utils.styled";
 import { CardImage } from "../helpers/CardImage";
 import { Wrapper } from './Offers.styled'
+
 interface Props {
   id: number;
   image: string;

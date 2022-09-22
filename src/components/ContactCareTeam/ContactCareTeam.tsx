@@ -1,8 +1,8 @@
+import { Wrapper } from './ContactCareTeam.styled';
+import Images from "./Images";
 import { H2, P } from "../helpers/Utils.styled";
 import { Button } from "../helpers/Button.styled";
-import Images from "./Images";
 import contactCareteamJSON from "../../data/contact-careteam.json";
-import { Wrapper } from './ContactCareTeam.styled';
 
 export default function ContactCareTeam() {
   return (

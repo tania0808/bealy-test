@@ -1,11 +1,11 @@
-import starDrawing from "../../assets/star-drawing.svg";
-import bealyAssurance from "../../assets/bealy-assurance.svg";
+import { ImageContainer } from './OfferTargets.styled'
 import TargetCard from "./TargetCard";
+import { H4 } from "../helpers/Utils.styled";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
-import { H4 } from "../helpers/Utils.styled";
+import starDrawing from "../../assets/star-drawing.svg";
+import bealyAssurance from "../../assets/bealy-assurance.svg";
 import targetsJSON from "../../data/offer-targets.json";
-import { ImageContainer } from './OfferTargets.styled'
 
 export default function OfferTargets() {
 

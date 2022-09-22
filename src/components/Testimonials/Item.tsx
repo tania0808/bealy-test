@@ -1,10 +1,9 @@
-import React from "react";
-import { H2, H6, P } from "../helpers/Utils.styled";
-import { Flex } from "../helpers/Flex.styled";
 import styled from "styled-components";
+import { device } from "../../theme/device";
+import { H6, P } from "../helpers/Utils.styled";
+import { Flex } from "../helpers/Flex.styled";
 import { ButtonTransparent } from "../helpers/Button.styled";
 import arrowRight from "../../assets/arrow-right-black.svg";
-import { device } from "../../theme/device";
 
 interface TestimonialProp {
   id: number;

@@ -1,11 +1,11 @@
+import { Wrapper } from './BealyUpdates.styled';
 import { H2, P } from "../helpers/Utils.styled";
 import { Button } from "../helpers/Button.styled";
-import cardio from "../../assets/bealy-updates/cardio.svg";
+import { ContainerS } from "../helpers/Container";
 import line from "../../assets/bealy-updates/line.svg";
+import cardio from "../../assets/bealy-updates/cardio.svg";
 import leftClock from "../../assets/bealy-updates/left-clock.svg";
 import rightClock from "../../assets/bealy-updates/right-clock.svg";
-import { ContainerS } from "../helpers/Container";
-import { Wrapper } from './BealyUpdates.styled';
 
 export default function ContactCareTeam() {
   return (

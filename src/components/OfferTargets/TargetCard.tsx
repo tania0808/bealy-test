@@ -1,7 +1,7 @@
+import { CardWrapper } from './OfferTargets.styled';
 import { Button } from "../helpers/Button.styled";
 import { H5, P } from "../helpers/Utils.styled";
 import { CardImage } from "../helpers/CardImage";
-import { CardWrapper } from './OfferTargets.styled';
 
 interface Props {
   id: number;

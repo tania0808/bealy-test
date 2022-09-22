@@ -1,12 +1,12 @@
+import { App, MoreInfo } from "./BealyApp.styled";
 import { Flex } from "../helpers/Flex.styled";
-import { H3, H2, P } from "../helpers/Utils.styled";
+import { H3, H2 } from "../helpers/Utils.styled";
 import { ButtonTransparent } from "../helpers/Button.styled";
-import arrowRightWhite from "../../assets/arrow-right.svg";
-import phones from "../../assets/bealy-app/phones.svg";
 import attentionIcon from "../../assets/bealy-app/attention-icon.svg";
 import playstoreBlack from "../../assets/bealy-app/playstore-black.svg";
 import playstoreWhite from "../../assets/bealy-app/playstore-white.svg";
-import { App, MoreInfo } from "./BealyApp.styled";
+import arrowRightWhite from "../../assets/arrow-right.svg";
+import phones from "../../assets/bealy-app/phones.svg";
 
 export default function BealyApp() {
   return (

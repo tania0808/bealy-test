@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import personalizedSupport from "../../assets/personalized-support.svg";
-import { Flex } from "../helpers/Flex.styled";
-
 import { device } from "../../theme/device";
+import { Flex } from "../helpers/Flex.styled";
+import personalizedSupport from "../../assets/personalized-support.svg";
+
 
 export const Wrapper = styled(Flex)`
   max-height: 570px;

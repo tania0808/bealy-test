@@ -1,9 +1,9 @@
 import { useState } from "react";
 import StatisticItem from "./StatisticItem";
-import statisticsJSON from "../../data/statistics.json";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import { H4 } from "../helpers/Utils.styled";
+import statisticsJSON from "../../data/statistics.json";
 
 export default function Offers() {
   const [offers] = useState(statisticsJSON);

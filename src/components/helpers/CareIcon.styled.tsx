@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { FlexItem } from "../helpers/Flex.styled"; 
 import { device } from "../../theme/device";
+import { FlexItem } from "../helpers/Flex.styled"; 
 
 interface IconBoxI {
   topD: string;

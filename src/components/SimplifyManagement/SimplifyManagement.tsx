@@ -1,10 +1,10 @@
-import healthManagement from "../../assets/simplify-management/health-management.svg";
-import umbrella from "../../assets/simplify-management/umbrella-assurance.svg";
+import { Wrapper } from './SimplifyManagement.styled';
+import { SectionImage } from "../helpers/SectionImage.styled";
 import { Flex } from "../helpers/Flex.styled";
 import { Button } from "../helpers/Button.styled";
 import { H2 } from "../helpers/Utils.styled";
-import { SectionImage } from "../helpers/SectionImage.styled";
-import { Wrapper } from './SimplifyManagement.styled';
+import healthManagement from "../../assets/simplify-management/health-management.svg";
+import umbrella from "../../assets/simplify-management/umbrella-assurance.svg";
 
 export default function SimplifyManagement() {
   return (

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-
 import { device } from "../../theme/device";
-
 import influencer from "../../assets/bealy-app/influencer.svg";
 
 

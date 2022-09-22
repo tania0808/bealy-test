@@ -1,6 +1,6 @@
+import { PreHeader } from './ComplexHeading.styled';
 import { H4, H5 } from "../helpers/Utils.styled";
 import { FlexItem } from "../helpers/Flex.styled"; 
-import { PreHeader } from './ComplexHeading.styled';
 
 type Props = {
   image: string;

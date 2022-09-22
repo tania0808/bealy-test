@@ -1,6 +1,6 @@
-import bealyHealth from "../../assets/bealy-health.svg";
-import { H4, P } from "../helpers/Utils.styled";
 import { Wrapper } from "./VirtualClinic.styled";
+import { H4, P } from "../helpers/Utils.styled";
+import bealyHealth from "../../assets/bealy-health.svg";
 
 const VirtualClinic = () => {
   return (

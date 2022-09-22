@@ -1,6 +1,6 @@
 import OfferCard from "./OfferCard";
-import { H3, P } from "../helpers/Utils.styled";
 import { GridContainer } from "../helpers/GridContainer";
+import { H3, P } from "../helpers/Utils.styled";
 
 import offersJSON from "../../data/offers.json";
 
