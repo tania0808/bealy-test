@@ -15,8 +15,6 @@ const NavBar = () => {
         <NavItem>
             <Link href="#" color='grey'>Personnel</Link>
             <Link href="#" font='bold'>Entreprise</Link>
-        </NavItem>
-        <NavItem>
             <Link href="#">Tarifs</Link>
             <Link href="#">Téléconsultaion</Link>
             <Link href="#">Nos solutions</Link>

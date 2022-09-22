@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { device } from "../../theme/device";
-
-
 import { FlexItem } from "../helpers/Utils.styled";
 
 export const Header = styled.header`
@@ -12,10 +10,12 @@ export const Header = styled.header`
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.header};
   padding: 20px 20px;
-
+  &> div {
+    width: fit-content;
+  }
   @media ${device.phone} {
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
 `;
 

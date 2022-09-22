@@ -19,7 +19,7 @@ export default function AccordionItem({
   description,
   folder
 }: AccordionItem) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleButton = () => {
     setIsOpen(!isOpen);
   };

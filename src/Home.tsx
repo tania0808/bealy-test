@@ -23,10 +23,14 @@ const Home = () => {
     <>
       <NavBar />
       <ContainerS>
-        <HealthPartner /> 
-        <Slider/>
+        <HealthPartner />
+        <Slider />
         <Offers />
-        <ProSection />
+      </ContainerS>
+
+      <ProSection />
+
+      <ContainerS>
         <EmployeeEquipment />
         <OfferTargets />
         <TechPower />
@@ -35,16 +39,14 @@ const Home = () => {
         <InscriptionStepsDesktop />
         <Statistics />
         <ContactCareTeam />
-      </ContainerS>
-      <ContainerS>
         <BealyUpdates />
         <BealyApp />
       </ContainerS>
-      <SimplifyManagement />  
+      <SimplifyManagement />
       <ContainerS>
-        <PersonalizedSupport/>
-        <Testimonials/>
-        <Slider/>
+        <PersonalizedSupport />
+        <Testimonials />
+        <Slider />
       </ContainerS>
     </>
   );

@@ -80,13 +80,13 @@ interface IflexItem {
 }
 export const FlexItem = styled.div<IflexItem>`
   display: flex;
-  @media ${device.bigDesk} {
-    width: ${({ width }) => (width ? width : "100%")};
-  }
   align-items: ${({ align }) => (align ? align : "center")};
   justify-content: ${({ justify }) => (justify ? justify : "start")};
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
   margin:${({ margin }) => (margin )};
+  @media ${device.bigDesk} {
+    width: ${({ width }) => (width ? width : "100%")};
+  }
 `;
 
 

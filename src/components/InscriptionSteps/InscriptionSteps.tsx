@@ -12,7 +12,7 @@ import ComplexHeading from "../ComplexHeading/ComplexHeading";
 import { Desktop, Mobile } from "../helpers/Display.styled";
 
 export default function HealthAssistance() {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState<number>(0);
 
   return (
     <FlexItem direction="column" align="end" margin="200px 0 0">

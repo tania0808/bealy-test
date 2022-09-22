@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.button};
   color: #fff;
   text-align: center;
-  padding: 56px;
+  padding: 56px 0; 
   margin-top: 220px;
 
   & > div {
