@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { device } from "../../theme/device";
 
 interface ImageWrapper {
   margin?: string;
+  marginMobile?:string;
 }
 export const SectionImage = styled.div<ImageWrapper>`
   height: 564px;
@@ -11,5 +13,8 @@ export const SectionImage = styled.div<ImageWrapper>`
   justify-content: center;
   & > img {
     width: 90%;
+  }
+  @media ${device.phone} {
+    margin: ${({ marginMobile }) => marginMobile ? marginMobile : 0};
   }
 `;

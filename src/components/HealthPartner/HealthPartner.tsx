@@ -1,10 +1,10 @@
-import { Flex } from "./helpers/Flex.styled";
-import { SectionImage } from "./helpers/Image.styled";
-import { ColoredSpan } from "./helpers/ColoredSpan";
-import { Button } from "./helpers/Button.styled";
-import { H2 } from "./helpers/Utils.styled";
+import { Flex } from "../helpers/Flex.styled";
+import { SectionImage } from "../helpers/SectionImage.styled";
+import { ColoredSpan } from "../helpers/ColoredSpan";
+import { Button } from "../helpers/Button.styled";
+import { H2 } from "../helpers/Utils.styled";
 
-import healthPartners from "../assets/health-partners.svg";
+import healthPartners from "../../assets/health-partners.svg";
 
 const HealthPartner = () => {
   return (

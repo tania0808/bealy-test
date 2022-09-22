@@ -1,6 +1,6 @@
 import { useState } from "react";
 import teleconsultation from "../../assets/teleconsultation.svg";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 import { Button } from "../helpers/Button.styled";
 import healthAssistanceJSON from "../../data/health-assistance.json";
 import Tabs from "../Tabs/Tabs";

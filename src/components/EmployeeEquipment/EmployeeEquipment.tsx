@@ -2,7 +2,7 @@ import phoneXCard from "../../assets/phoneXCard.svg";
 import { Flex } from "../helpers/Flex.styled";
 import { Button } from "../helpers/Button.styled";
 import { H2 } from "../helpers/Utils.styled";
-import { SectionImage } from "../helpers/Image.styled";
+import { SectionImage } from "../helpers/SectionImage.styled";
 
 export default function EmployeeEquipment() {
   return (
@@ -17,7 +17,7 @@ export default function EmployeeEquipment() {
           <Button>Ouvrir un compte entreprise</Button>
         </Flex>
       </div>
-      <SectionImage>
+      <SectionImage marginMobile="4rem 0 0 0">
         <img src={phoneXCard} alt="phoneXCard" />
       </SectionImage>
     </Flex>

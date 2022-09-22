@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 
 export const PreHeader = styled(FlexItem)`
   & > p {

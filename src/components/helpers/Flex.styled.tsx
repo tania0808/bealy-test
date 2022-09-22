@@ -11,11 +11,31 @@ interface IFlex {
   mobileDirection?: string;
 }
 
+export const FlexItem = styled.div<IflexItem>`
+  display: flex;
+  flex-direction: ${({ direction }) => (direction ? direction : "row")};
+  align-items: ${({ align }) => (align ? align : "center")};
+  justify-content: ${({ justify }) => (justify || "start")};
+  margin: ${({ margin }) => margin};
+  @media ${device.bigDesk} {
+    width: ${({ width }) => (width ? width : "100%")};
+  }
+`;
+
+
+// Flex for simple section
+interface IflexItem {
+  justify?: string;
+  align?: string;
+  direction?: string;
+  width?: string;
+  margin?: string;
+}
 export const Flex = styled.div<IFlex>`
   display: flex;
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
-  justify-content: ${({ justify }) => justify || "space-between"};
   align-items: ${({ align }) => align || "center"};
+  justify-content: ${({ justify }) => justify || "space-between"};
   margin-top: ${({ margin }) => (margin ? margin : "1rem")};
   gap: ${({ gap }) => gap};
   height: 100%;
@@ -27,15 +47,14 @@ export const Flex = styled.div<IFlex>`
   }
 
   @media ${device.phone} {
-    flex-direction: ${({ mobileDirection }) =>
-      mobileDirection ? mobileDirection : "column"};
+    flex-direction: ${({ mobileDirection }) => mobileDirection ? mobileDirection : "column"};
   }
 `;
 
-
 interface IFlexColumn {
-  padding?:string;
+  padding?: string;
 }
+
 export const FlexColumn = styled.div<IFlexColumn>`
   display: flex;
   flex-direction: column;

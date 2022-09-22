@@ -4,7 +4,7 @@ import Tabs from "../Tabs/Tabs";
 import { Button } from "../helpers/Button.styled";
 import arrowRightBlack from "../../assets/arrow-right-black.svg";
 import heart from "../../assets/heart.svg";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 import Accordion from "../Accordion/Accordion";
 import { CardImage } from "../helpers/CardImage";
 import ComplexHeading from "../ComplexHeading/ComplexHeading";

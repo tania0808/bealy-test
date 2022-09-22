@@ -1,13 +1,13 @@
 import * as React from "react";
 import NavBar from "./components/Header/Header";
 import { ContainerS } from "./components/helpers/Container";
-import HealthPartner from "./components/HealthPartner";
+import HealthPartner from "./components/HealthPartner/HealthPartner";
 import Slider from "./components/PartnersSlider/PartnersSlider";
 import Offers from "./components/Offers/Offers";
 import ProSection from "./components/ProAdvantages/ProSection";
 import EmployeeEquipment from "./components/EmployeeEquipment/EmployeeEquipment";
 import OfferTargets from "./components/OfferTargets/OfferTargets";
-import TechPower from "./components/TechPower";
+import TechPower from "./components/TechPower/TechPower";
 import VirtualClinic from "./components/VirtualClinic/VirtualClinic";
 import HealthAssistanceDesktop from "./components/HealthAssistance/HealthAssistance";
 import InscriptionStepsDesktop from "./components/InscriptionSteps/InscriptionSteps";

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { device } from "../../theme/device";
 
+
+// HEADINGS
+
 interface IHeading {
   align?: string;
   padding?: string;
@@ -8,6 +11,7 @@ interface IHeading {
   white?: any;
   top?:string
 }
+
 export const Heading = styled.h1<IHeading>`
   text-align: ${({ align }) => (align ? align : "start")};
   padding: ${({ padding }) => (padding ? padding : "0")};
@@ -30,18 +34,24 @@ export const H3 = styled(Heading)`
   font-size: 36px;
   line-height: 42px;
 `;
+
 export const H4 = styled(Heading)`
   font-size: 32px;
   line-height: 38px;
 `;
+
 export const H5 = styled(Heading)`
   font-size: 24px;
   line-height: 28px;
 `;
+
 export const H6 = styled(Heading)`
   font-size: 18px;
   line-height: 22px;
 `;
+
+
+// PARAGRAPH
 
 interface IPar {
   align?: string;
@@ -58,11 +68,19 @@ export const P = styled.p<IPar>`
   margin: ${({ margin }) => (margin ? margin : "0")};
 `;
 
+// GREY HORIZONTAL BAR
+export const HorizontalBar = styled.span`
+  height: 1px;
+  background-color: ${({ theme }) => theme.colors.light_grey};
+  margin: 0 35px;
+  `;
+
+
+// LINK 
 interface ILink {
   color?: string;
   font?: string;
 }
-
 
 export const Link = styled.a<ILink>`
   font-size: 16px;
@@ -71,27 +89,4 @@ export const Link = styled.a<ILink>`
   font-weight: ${({ font }) => (font === "bold" ? "700" : "400")};
 `;
 
-interface IflexItem {
-  justify?: string;
-  align?: string;
-  direction?: string;
-  width?: string;
-  margin?: string;
-}
-export const FlexItem = styled.div<IflexItem>`
-  display: flex;
-  align-items: ${({ align }) => (align ? align : "center")};
-  justify-content: ${({ justify }) => (justify ? justify : "start")};
-  flex-direction: ${({ direction }) => (direction ? direction : "row")};
-  margin:${({ margin }) => (margin )};
-  @media ${device.bigDesk} {
-    width: ${({ width }) => (width ? width : "100%")};
-  }
-`;
 
-
-export const HorizontalBar = styled.span`
-  height: 1px;
-  background-color: ${({ theme }) => theme.colors.light_grey};
-  margin: 0 35px;
-`;

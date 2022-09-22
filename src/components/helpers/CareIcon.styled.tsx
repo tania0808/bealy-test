@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexItem } from "./Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 import { device } from "../../theme/device";
 
 interface IconBoxI {

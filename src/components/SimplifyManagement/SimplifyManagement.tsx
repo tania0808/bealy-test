@@ -3,7 +3,7 @@ import umbrella from "../../assets/simplify-management/umbrella-assurance.svg";
 import { Flex } from "../helpers/Flex.styled";
 import { Button } from "../helpers/Button.styled";
 import { H2 } from "../helpers/Utils.styled";
-import { SectionImage } from "../helpers/Image.styled";
+import { SectionImage } from "../helpers/SectionImage.styled";
 import { Wrapper } from './SimplifyManagement.styled';
 
 export default function SimplifyManagement() {
@@ -20,7 +20,7 @@ export default function SimplifyManagement() {
           </p>
           <Button margin="40px 0">Prenez rendez-vous avec un conseiller</Button>
         </div>
-        <SectionImage>
+        <SectionImage marginMobile="0 0 4rem 0">
           <img src={healthManagement} alt="people" />
         </SectionImage>
       </Flex>

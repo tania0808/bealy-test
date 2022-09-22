@@ -3,9 +3,10 @@ import arrowRight from "../../assets/arrow-simple-right.svg";
 import arrowDown from "../../assets/arrow-simple-down.svg";
 import { Flex } from "../helpers/Flex.styled";
 import styled from "styled-components";
-import {SectionImage} from '../helpers/Image.styled'
+import {SectionImage} from '../helpers/SectionImage.styled'
 import {H6, P} from '../helpers/Utils.styled'
 import healthAssistanceJSON from "../../data/health-assistance.json";
+
 interface AccordionItem {
   title: string;
   image: string;

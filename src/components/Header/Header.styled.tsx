@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../theme/device";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 
 export const Header = styled.header`
   margin: 0 auto;

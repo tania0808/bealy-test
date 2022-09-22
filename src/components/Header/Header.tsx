@@ -1,5 +1,6 @@
 import { Header, NavItem, Hamburger } from "./Header.styled";
-import { H5, Link, FlexItem } from "../helpers/Utils.styled";
+import { H5, Link } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 import { Button } from "../helpers/Button.styled";
 import hamburger from '../../assets/hamburger.svg'
 import logo from "../../assets/logo.svg";

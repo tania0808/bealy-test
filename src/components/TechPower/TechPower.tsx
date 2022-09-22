@@ -1,8 +1,8 @@
-import { Flex } from "./helpers/Flex.styled";
-import { H2 } from "./helpers/Utils.styled";
-import techPower from "../assets/tech-power.svg";
-import { SectionImage } from "./helpers/Image.styled";
-import { Button } from "./helpers/Button.styled";
+import { Flex } from "../helpers/Flex.styled";
+import { H2 } from "../helpers/Utils.styled";
+import techPower from "../../assets/tech-power.svg";
+import { SectionImage } from "../helpers/SectionImage.styled";
+import { Button } from "../helpers/Button.styled";
 
 const TechPower = () => {
   return (

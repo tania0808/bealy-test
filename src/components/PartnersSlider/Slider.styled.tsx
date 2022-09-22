@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { FlexItem } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
 
 const scroll = keyframes`
 0% {

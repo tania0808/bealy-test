@@ -1,5 +1,7 @@
-import { FlexItem, H4, H5 } from "../helpers/Utils.styled";
-import { PreHeader } from './ComplexHeading.styled'
+import { H4, H5 } from "../helpers/Utils.styled";
+import { FlexItem } from "../helpers/Flex.styled"; 
+import { PreHeader } from './ComplexHeading.styled';
+
 type Props = {
   image: string;
   secondaryTitle: string;
@@ -16,7 +18,7 @@ export default function ComplexHeading({
   mobileWidth
 }: Props) {
   return (
-    <FlexItem direction="column" width={mobileWidth} justify="flex-start">
+    <FlexItem direction="column" width={mobileWidth}>
       <PreHeader>
         <img src={image} alt="" />
         <p>{secondaryTitle}</p>
