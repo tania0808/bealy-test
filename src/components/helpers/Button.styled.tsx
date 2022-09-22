@@ -8,7 +8,7 @@ interface Button {
   padding?: string;
   justify?: string;
   border?: any;
-  width?:string;
+  width?: string;
 }
 
 export const ButtonBase = styled.button<Button>`
@@ -20,6 +20,8 @@ export const ButtonBase = styled.button<Button>`
   display: flex;
   align-items: center;
   justify-content: ${({ justify }) => justify || "center"};
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 
   & > img {
     padding-left: 11px;
@@ -37,6 +39,12 @@ export const Button = styled(ButtonBase)`
     ${({ border }: Button) => (border && "black") || "transparent"};
   color: ${({ colorBlack }) => (colorBlack && "black") || "#fff"};
   background-color: ${({ bgWhite }) => (bgWhite && "#fff") || "black"};
+  &:hover {
+    background-color: ${({ bgWhite }) =>
+      (bgWhite && "rgb(234, 246, 246)") || "rgb(197, 231, 231)"};
+    border: 1px solid
+      ${({ border }) => (border && "rgb(197, 231, 231)") || "transparent"};
+  }
 `;
 
 export const ButtonTransparent = styled(ButtonBase)`
@@ -49,5 +57,8 @@ export const ButtonPink = styled(ButtonBase)`
   background-color: #f0004c;
   border: 1px solid #f0004c;
   color: #fff;
-`;
 
+  &:hover {
+    opacity: 0.7;
+  }
+`;
