@@ -10,11 +10,10 @@ import buttonLeft from "../../assets/button-left.svg";
 import { testimonialsImages } from "../../assets/testimonials";
 
 export default function Testimonials() {
-  const [testimonials, setTestimonials] = useState(testimonialsJSON);
   const [card, setCard] = useState<number>(0);
 
   const nextCard = () => {
-    if (card >= testimonials.length - 1) {
+    if (card >= testimonialsJSON.length - 1) {
       return setCard(0);
     } else {
       setCard(card + 1);
@@ -29,17 +28,14 @@ export default function Testimonials() {
     }
   };
 
-  console.log(testimonialsImages[testimonials[card].logo]);
-  console.log(card);
-
   return (
     <>
       <H2 align="center">Ils parlent de nous</H2>
       <Mobile>
         <SectionCenter>
           <Item
-            {...testimonials[card]}
-            icon={testimonialsImages[testimonials[card].logo]}
+            {...testimonialsJSON[card]}
+            icon={testimonialsImages[testimonialsJSON[card].logo]}
           />
         </SectionCenter>
         <SectionCenter>
@@ -53,7 +49,7 @@ export default function Testimonials() {
       </Mobile>
       <Desktop>
         <SectionCenter>
-          {testimonials.slice(0, 3).map((item) => {
+          {testimonialsJSON.slice(0, 3).map((item) => {
             return (
               <Item
                 {...item}
