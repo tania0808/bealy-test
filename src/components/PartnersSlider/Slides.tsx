@@ -1,6 +1,5 @@
 import { Slide } from "./Slider.styled";
-import partnersJSON from "../../data/partners.json";
-import { logos } from "../../assets/partners-logos/index";
+import partnersEnum from "../../data/partners";
 
 interface PartnerLogo {
   id: number;
@@ -10,10 +9,14 @@ interface PartnerLogo {
 export default function Slides() {
   return (
     <>
-      {partnersJSON.map((logo: PartnerLogo) => {
+      {partnersEnum.map((logo: any) => {
         return (
+          // <Slide key={logo.id}>
+          //   <img src={logos[logo.image]} alt={logo.image} />
+          // </Slide>
+          // <p>test</p>
           <Slide key={logo.id}>
-            <img src={logos[logo.image]} alt={logo.image} />
+            <img src={logo.image} alt={logo.alt} />
           </Slide>
         );
       })}

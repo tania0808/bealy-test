@@ -7,9 +7,8 @@ import pernodRicard from "./pernodRicard.svg";
 import spvie from "./spvie.svg";
 import swissLife from "./swissLife.svg";
 import unlimitd from "./unlimitd.svg";
-import ImageI from "../interface";
 
-export  const logos: ImageI = {
+export {
   april,
   aviva,
   generali,
