@@ -1,4 +1,4 @@
-import { TabMenu, TabItem } from './Tabs.styled';
+import { TabMenu, TabItem } from "./Tabs.styled";
 
 interface TabProps {
   items: any[];
@@ -12,6 +12,7 @@ interface Tab {
   image: string;
   description: string;
 }
+
 export default function Tabs({ items, onHandleClick, activeId }: TabProps) {
   return (
     <>
@@ -35,5 +36,3 @@ export default function Tabs({ items, onHandleClick, activeId }: TabProps) {
     </>
   );
 }
-
-import {} from './Tabs.styled'

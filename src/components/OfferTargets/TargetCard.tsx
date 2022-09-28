@@ -4,13 +4,12 @@ import { H5, P } from "../helpers/Utils.styled";
 import { CardImage } from "../helpers/CardImage";
 
 interface Props {
-  id: number;
-  image: string;
   title: string;
   description: string;
+  icon: string;
 }
 
-export default function OfferCard({ title, image, description }: Props) {
+export default function OfferCard({ title, description, icon }: Props) {
   return (
     <CardWrapper>
       <H5 align="center" padding="40px 0 0" top="40px">
@@ -18,9 +17,7 @@ export default function OfferCard({ title, image, description }: Props) {
       </H5>
       <CardImage height="150px" imageWidth="50%" margin="20px 0 0 0">
         <img
-          src={`${
-            import.meta.env.VITE_BASE_URL
-          }assets/offer-targets/${image}.svg`}
+          src={icon}
           alt="image"
         />
       </CardImage>

@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "image": "step-1",
+    "image": "step1",
     "title": "Étape 1",
     "description": "Créez votre compte entreprise sur la plateforme et choisissez votre offre."
   },
   {
     "id": 2,
-    "image": "step-2",
+    "image": "step2",
     "title": "Étape 2",
     "description": "Importez la liste de vos salariés sur la plateforme. "
   },
   {
     "id": 3,
-    "image": "step-3",
+    "image": "step3",
     "title": "Étape 3",
     "description": "Entrez votre RIB / carte bancaire et signez votre contrat en ligne."
   },
   {
     "id": 4,
-    "image": "step-4",
+    "image": "step4",
     "title": "Étape 4",
     "description": "Pilotez la gestion de vos contrats grâce à notre plateforme."
   }

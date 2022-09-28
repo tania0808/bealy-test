@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "well-being",
+    "image": "wellBeing",
     "topD": "18%",
     "leftD": "110%",
     "topM": "",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "check-symptoms",
+    "image": "checkSymptoms",
     "topD": "75%",
     "leftD": "110%",
     "topM": "70%",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "health-increased",
+    "image": "healthIncreased",
     "topD": "115%",
     "leftD": "90%",
     "topM": "-5%",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "image": "mental-health",
+    "image": "mentalHealth",
     "topD": "95%",
     "leftD": "30%",
     "topM": "68%",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "image": "medical-chat",
+    "image": "medicalChat",
     "topD": "110%",
     "leftD": "-20%",
     "topM": "35%",

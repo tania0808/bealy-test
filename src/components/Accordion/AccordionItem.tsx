@@ -6,16 +6,14 @@ import arrowDown from "../../assets/arrow-simple-down.svg";
 
 interface AccordionItem {
   title: string;
-  image: string;
   description: string;
-  folder: string;
+  icon: string;
 }
 
 export default function AccordionItem({
   title,
-  image,
   description,
-  folder,
+  icon,
 }: AccordionItem) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleButton = () => {
@@ -38,12 +36,7 @@ export default function AccordionItem({
       </AccordionHeader>
       {isOpen && (
         <Image>
-          <img
-            src={`${
-              import.meta.env.VITE_BASE_URL
-            }assets/${folder}/${image}.svg`}
-            alt=""
-          />
+          <img src={icon} alt="" />
         </Image>
       )}
     </>

@@ -2,6 +2,7 @@ import AccordionItem from "./AccordionItem";
 
 interface AccProps {
   items: any[];
+  icons: any;
 }
 interface AccordionItem {
   id: number;
@@ -10,12 +11,12 @@ interface AccordionItem {
   description: string;
 }
 
-export default function Accordion({ items }: AccProps) {
+export default function Accordion({ items, icons }: AccProps) {
   return (
     <>
       {items.map((item: AccordionItem) => {
         return (
-          <AccordionItem key={item.id} {...item} folder="health-assistance" />
+          <AccordionItem key={item.id} {...item} icon={icons[item.image]} />
         );
       })}
     </>

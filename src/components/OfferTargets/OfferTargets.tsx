@@ -6,6 +6,7 @@ import { GridContainer } from "../helpers/GridContainer";
 import starDrawing from "../../assets/star-drawing.svg";
 import bealyAssurance from "../../assets/bealy-assurance.svg";
 import targetsJSON from "../../data/offer-targets.json";
+import { offerTargetsImages } from '../../assets/offer-targets/index';
 
 export default function OfferTargets() {
 
@@ -23,7 +24,7 @@ export default function OfferTargets() {
         </H4>
         <GridContainer>
           {targetsJSON.map((item) => {
-            return <TargetCard key={item.id} {...item} />;
+            return <TargetCard key={item.id} {...item} icon={offerTargetsImages[item.image]} />;
           })}
         </GridContainer>
       </>

@@ -3,12 +3,12 @@ import ComplexHeading from "../ComplexHeading/ComplexHeading";
 import Accordion from "../Accordion/Accordion";
 import Tabs from "../Tabs/Tabs";
 import { Button } from "../helpers/Button.styled";
-import { FlexItem } from "../helpers/Flex.styled"; 
+import { FlexItem } from "../helpers/Flex.styled";
 import { CardImage } from "../helpers/CardImage";
 import heart from "../../assets/heart.svg";
 import arrowRightBlack from "../../assets/arrow-right-black.svg";
 import inscriptionStepsJSON from "../../data/inscription-steps.json";
-
+import { stepImages } from "../../assets/inscription-steps/index";
 import { Desktop, Mobile } from "../helpers/Display.styled";
 
 export default function HealthAssistance() {
@@ -27,9 +27,7 @@ export default function HealthAssistance() {
         <FlexItem width="100%">
           <CardImage margin="0 50px 0 0" cardWidth="70%" imageWidth="100%">
             <img
-              src={`${import.meta.env.VITE_BASE_URL}assets/inscription-steps/${
-                inscriptionStepsJSON[value - 1].image
-              }.svg`}
+              src={stepImages[inscriptionStepsJSON[value - 1].image]}
               alt=""
             />
           </CardImage>
@@ -38,11 +36,10 @@ export default function HealthAssistance() {
             onHandleClick={setValue}
             activeId={value}
           />
-
         </FlexItem>
       </Desktop>
       <Mobile>
-        <Accordion items={inscriptionStepsJSON} />
+        <Accordion items={inscriptionStepsJSON} icons={stepImages} />
       </Mobile>
       <Button margin="40px 0 0 0" bgWhite colorBlack border>
         Découvrir les offres <img src={arrowRightBlack} alt="" />
