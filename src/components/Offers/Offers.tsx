@@ -1,7 +1,7 @@
 import OfferCard from "./OfferCard";
 import { GridContainer } from "../helpers/GridContainer";
 import { H3, P } from "../helpers/Utils.styled";
-
+import {offerImages} from '../../assets/offers/index'
 import offersJSON from "../../data/offers.json";
 
 export default function Offers() {
@@ -15,7 +15,7 @@ export default function Offers() {
       </P>
       <GridContainer>
         {offersJSON.map((item) => {
-          return <OfferCard key={item.id} {...item} />;
+          return <OfferCard key={item.id} {...item} icon={offerImages[item.image]} />;
         })}
       </GridContainer>
     </>

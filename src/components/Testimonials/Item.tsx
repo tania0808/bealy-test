@@ -6,16 +6,14 @@ import { ButtonTransparent } from "../helpers/Button.styled";
 import arrowRight from "../../assets/arrow-right-black.svg";
 
 interface TestimonialProp {
-  id: number;
-  logo: string;
+  icon: string;
   text: string;
   date: string;
   company: string;
   margin?: string | number;
 }
 export default function Item({
-  id,
-  logo,
+  icon,
   text,
   date,
   company,
@@ -27,9 +25,7 @@ export default function Item({
         <Header gap="10px" margin="15px" direction="row">
           <Logo>
             <img
-              src={`${
-                import.meta.env.VITE_BASE_URL
-              }assets/testimonials/${logo}.svg`}
+              src={icon}
               alt="image"
             />
           </Logo>

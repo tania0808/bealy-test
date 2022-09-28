@@ -3,20 +3,17 @@ import { device } from "../../theme/device";
 import { CardImage } from "../helpers/CardImage";
 
 interface Props {
-  id: number;
-  image: string;
+  icon: string;
   title: string;
   description: string;
 }
 
-export default function ProCard({ title, image, description }: Props) {
+export default function ProCard({ title, icon, description }: Props) {
   return (
     <ProCardS>
       <CardImage>
         <img
-          src={`${
-            import.meta.env.VITE_BASE_URL
-          }assets/pro-advantages/${image}.svg`}
+          src={icon}
           alt="image"
         />
       </CardImage>

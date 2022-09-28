@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { ButtonTransparent } from "../helpers/Button.styled";
 import Item from "./Item";
 import { Desktop, Mobile } from "../helpers/Display.styled";
-import buttonRight from '../../assets/button-right.svg';
-import buttonLeft from '../../assets/button-left.svg';
+import buttonRight from "../../assets/button-right.svg";
+import buttonLeft from "../../assets/button-left.svg";
+import { testimonialsImages } from "../../assets/testimonials";
 
 export default function Testimonials() {
   const [testimonials, setTestimonials] = useState(testimonialsJSON);
@@ -22,22 +23,32 @@ export default function Testimonials() {
 
   const prevCard = () => {
     if (card <= 0) {
-      return setCard(testimonials.length - 1);
+      setCard(5);
     } else {
-      setCard(0);
+      return setCard(card - 1);
     }
   };
+
+  console.log(testimonialsImages[testimonials[card].logo]);
+  console.log(card);
 
   return (
     <>
       <H2 align="center">Ils parlent de nous</H2>
       <Mobile>
         <SectionCenter>
-          <Item {...testimonials[card]} />
+          <Item
+            {...testimonials[card]}
+            icon={testimonialsImages[testimonials[card].logo]}
+          />
         </SectionCenter>
         <SectionCenter>
-          <ButtonTransparent onClick={prevCard}><img src={buttonLeft} alt="" /></ButtonTransparent>
-          <ButtonTransparent onClick={nextCard}><img src={buttonRight} alt="" /></ButtonTransparent>
+          <ButtonTransparent onClick={prevCard}>
+            <img src={buttonLeft} alt="" />
+          </ButtonTransparent>
+          <ButtonTransparent onClick={nextCard}>
+            <img src={buttonRight} alt="" />
+          </ButtonTransparent>
         </SectionCenter>
       </Mobile>
       <Desktop>
@@ -46,6 +57,7 @@ export default function Testimonials() {
             return (
               <Item
                 {...item}
+                icon={testimonialsImages[item.logo]}
                 key={item.id}
                 margin={item.id % 2 !== 0 ? "20px" : 0}
               />
