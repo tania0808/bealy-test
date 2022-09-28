@@ -1,4 +1,4 @@
-In .env file enter the adress of your local host
+[Live version is here](https://bealy-homepage.netlify.app/)
 
 
 ```
