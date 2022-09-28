@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "well-being",
+    "image": "wellBeing",
     "topD": "70%",
     "leftD": "13%",
     "topM": "85%",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "mental-health",
+    "image": "mentalHealth",
     "topD": "47%",
     "leftD": "90%",
     "topM": "60%",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "medical-chat",
+    "image": "medicalChat",
     "topD": "20%",
     "leftD": "85%",
     "topM": "3%",
