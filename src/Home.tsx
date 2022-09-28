@@ -1,4 +1,3 @@
-import * as React from "react";
 import NavBar from "./components/Header/Header";
 import { ContainerS } from "./components/helpers/Container";
 import HealthPartner from "./components/HealthPartner/HealthPartner";
@@ -18,6 +17,7 @@ import BealyApp from "./components/BealyApp/BealyApp";
 import SimplifyManagement from "./components/SimplifyManagement/SimplifyManagement";
 import { PersonalizedSupport } from "./components/PersonalizedSupport/PersonalizedSupport";
 import Testimonials from "./components/Testimonials/Testimonials";
+
 const Home = () => {
   return (
     <>
@@ -28,8 +28,8 @@ const Home = () => {
         <Offers />
       </ContainerS>
 
-
       <ProSection />
+
       <ContainerS>
         <EmployeeEquipment />
         <OfferTargets />

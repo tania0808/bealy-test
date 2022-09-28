@@ -3,7 +3,7 @@ import { Button } from "../helpers/Button.styled";
 import { H4, H5, P } from "../helpers/Utils.styled";
 import Images from "../ContactCareTeam/Images";
 import cardAssurance from "../../assets/card-assurance.svg";
-import personalizedSupportJSON from "../../data/personalized-support.json";
+import support from "../../data/personalized-support";
 
 export function PersonalizedSupport() {
   return (
@@ -25,7 +25,7 @@ export function PersonalizedSupport() {
             <Button margin="0 auto" padding="7px 20px">
               Ouvrir un compte
             </Button>
-            <Images icons={personalizedSupportJSON} width="35px" />
+            <Images icons={support} width="35px" />
           </Icons>
           <GradientContainer>
             <img src={cardAssurance} alt="cardAssurance" />

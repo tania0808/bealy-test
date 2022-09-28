@@ -2,7 +2,7 @@ import { Wrapper } from './ContactCareTeam.styled';
 import Images from "./Images";
 import { H2, P } from "../helpers/Utils.styled";
 import { Button } from "../helpers/Button.styled";
-import contactCareteamJSON from "../../data/contact-careteam.json";
+import contactCareTeam from "../../data/contact-careteam";
 
 export default function ContactCareTeam() {
   return (
@@ -18,7 +18,7 @@ export default function ContactCareTeam() {
         <Button margin="0 auto" width="70%">
           Prendre rendez-vous<p> &nbsp; avec l’équipe Careteam </p>
         </Button>
-        <Images icons={contactCareteamJSON} width="80px" />
+        <Images icons={contactCareTeam} width="80px" />
       </div>
     </Wrapper>
   );

@@ -5,7 +5,7 @@ import { Wrapper } from './Offers.styled'
 
 interface Props {
   id: number;
-  icon: string;
+  image: string;
   title: string;
   description: string;
   slogan: string;
@@ -14,7 +14,7 @@ interface Props {
 export default function OfferCard({
   id,
   title,
-  icon,
+  image,
   description,
   slogan,
 }: Props) {
@@ -22,7 +22,7 @@ export default function OfferCard({
     <Wrapper>
       <CardImage height="230px" imageWidth="50%">
         <img
-          src={icon}
+          src={image}
           alt="image"
         />
       </CardImage>

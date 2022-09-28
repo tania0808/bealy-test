@@ -1,19 +1,18 @@
-import styled from "styled-components";
-import { device } from "../../theme/device";
 import { H6, P } from "../helpers/Utils.styled";
 import { Flex } from "../helpers/Flex.styled";
 import { ButtonTransparent } from "../helpers/Button.styled";
 import arrowRight from "../../assets/arrow-right-black.svg";
+import {Article, Header, Logo, ButtonWrapper, } from './Testimonials.styled';
 
 interface TestimonialProp {
-  icon: string;
+  logo: string;
   text: string;
   date: string;
   company: string;
   margin?: string | number;
 }
 export default function Item({
-  icon,
+  logo,
   text,
   date,
   company,
@@ -25,7 +24,7 @@ export default function Item({
         <Header gap="10px" margin="15px" direction="row">
           <Logo>
             <img
-              src={icon}
+              src={logo}
               alt="image"
             />
           </Logo>
@@ -52,55 +51,3 @@ export default function Item({
   );
 }
 
-const ButtonWrapper = styled(Flex)`
-  justify-content: end;
-`;
-
-const Header = styled(Flex)`
-  flex-direction: row !important;
-`;
-
-interface ArticleI {
-  margin?: string | number;
-}
-
-const Article = styled.article<ArticleI>`
-  width: 284px;
-  padding: 0 25px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  margin-top: ${({ margin }) => margin || 0};
-  min-height: 365px;
-  max-height: 365px;
-  & > div {
-    flex: 1;
-    height: 100%;
-    & > p {
-      line-height: 27px;
-    }
-  }
-  @media ${device.phone} {
-    width: 99vw;
-  }
-`;
-
-const Logo = styled.div`
-  min-width: 40px;
-  min-height: 40px;
-  max-width: 40px;
-  max-height: 40px;
-  border: 1px solid #e3e3e3;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  & > img {
-    min-width: 40px;
-    min-height: 40px;
-    max-width: 40px;
-    max-height: 40px;
-    border-radius: 50%;
-    object-fit: contain;
-  }
-`;

@@ -2,10 +2,7 @@ import { Wrapper } from './BealyUpdates.styled';
 import { H2, P } from "../helpers/Utils.styled";
 import { Button } from "../helpers/Button.styled";
 import { ContainerS } from "../helpers/Container";
-import line from "../../assets/bealy-updates/line.svg";
-import cardio from "../../assets/bealy-updates/cardio.svg";
-import leftClock from "../../assets/bealy-updates/left-clock.svg";
-import rightClock from "../../assets/bealy-updates/right-clock.svg";
+import * as images from '../../assets/bealy-updates/index';
 
 export default function ContactCareTeam() {
   return (
@@ -31,10 +28,10 @@ export default function ContactCareTeam() {
             En savoir plus
           </Button>
         </div>
-        <img src={cardio} alt="" />
-        <img src={line} alt="" />
-        <img src={leftClock} alt="" />
-        <img src={rightClock} alt="" />
+        <img src={images.cardio} alt="" />
+        <img src={images.line} alt="" />
+        <img src={images.leftClock} alt="" />
+        <img src={images.rightClock} alt="" />
       </Wrapper>
     </>
   );

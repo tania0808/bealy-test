@@ -1,5 +1,4 @@
 import { IconBox } from "../helpers/CareIcon.styled";
-import { contactCareTeamImages } from "../../assets/contact-careteam/index";
 
 interface Icon {
   id: number;
@@ -29,7 +28,7 @@ export default function Images({ icons, width }: Data) {
             width={width}
           >
             <img
-              src={contactCareTeamImages[icon.image]}
+              src={icon.image}
               alt="image"
             />
           </IconBox>

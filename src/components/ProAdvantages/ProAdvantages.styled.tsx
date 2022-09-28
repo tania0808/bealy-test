@@ -27,3 +27,25 @@ export const Section = styled.section`
     padding: 56px 25px;
   }
 `;
+
+export const ProCardWrapper = styled.div`
+  height: 100%;
+  margin: 0 auto;
+  max-width: 191px;
+
+  & > h5 {
+    margin-top: 40px;
+  }
+
+  & > p {
+    margin-top: 16px;
+  }
+
+  @media ${device.phone} {
+    grid-template-columns: auto;
+    grid-row-gap: 24px;
+    padding: 0;
+    min-width: 193px;
+    max-width: 193px;
+  }
+`;

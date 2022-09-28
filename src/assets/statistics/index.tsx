@@ -1,7 +1,5 @@
-import blue from './blue.svg';
-import red from './red.svg';
-import yellow from './yellow.svg';
-import ImageI from '../interface';
+import blue from "./blue.svg";
+import red from "./red.svg";
+import yellow from "./yellow.svg";
 
-export const statistics:ImageI = { blue, red, yellow };
-
+export { blue, red, yellow };

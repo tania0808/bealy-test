@@ -6,10 +6,10 @@ import { CardImage } from "../helpers/CardImage";
 interface Props {
   title: string;
   description: string;
-  icon: string;
+  image: string;
 }
 
-export default function OfferCard({ title, description, icon }: Props) {
+export default function OfferCard({ title, description, image }: Props) {
   return (
     <CardWrapper>
       <H5 align="center" padding="40px 0 0" top="40px">
@@ -17,7 +17,7 @@ export default function OfferCard({ title, description, icon }: Props) {
       </H5>
       <CardImage height="150px" imageWidth="50%" margin="20px 0 0 0">
         <img
-          src={icon}
+          src={image}
           alt="image"
         />
       </CardImage>

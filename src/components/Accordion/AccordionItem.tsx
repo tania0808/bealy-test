@@ -7,13 +7,13 @@ import arrowDown from "../../assets/arrow-simple-down.svg";
 interface AccordionItem {
   title: string;
   description: string;
-  icon: string;
+  image: string;
 }
 
 export default function AccordionItem({
   title,
-  description,
-  icon,
+  description, 
+  image
 }: AccordionItem) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleButton = () => {
@@ -36,7 +36,7 @@ export default function AccordionItem({
       </AccordionHeader>
       {isOpen && (
         <Image>
-          <img src={icon} alt="" />
+          <img src={image} alt="" />
         </Image>
       )}
     </>

@@ -7,8 +7,7 @@ import { FlexItem } from "../helpers/Flex.styled";
 import { CardImage } from "../helpers/CardImage";
 import heart from "../../assets/heart.svg";
 import arrowRightBlack from "../../assets/arrow-right-black.svg";
-import inscriptionStepsJSON from "../../data/inscription-steps.json";
-import { stepImages } from "../../assets/inscription-steps/index";
+import steps from "../../data/inscription-steps";
 import { Desktop, Mobile } from "../helpers/Display.styled";
 
 export default function HealthAssistance() {
@@ -26,20 +25,13 @@ export default function HealthAssistance() {
       <Desktop>
         <FlexItem width="100%">
           <CardImage margin="0 50px 0 0" cardWidth="70%" imageWidth="100%">
-            <img
-              src={stepImages[inscriptionStepsJSON[value - 1].image]}
-              alt=""
-            />
+            <img src={steps[value - 1].image} alt="" />
           </CardImage>
-          <Tabs
-            items={inscriptionStepsJSON}
-            onHandleClick={setValue}
-            activeId={value}
-          />
+          <Tabs items={steps} onHandleClick={setValue} activeId={value} />
         </FlexItem>
       </Desktop>
       <Mobile>
-        <Accordion items={inscriptionStepsJSON} icons={stepImages} />
+        <Accordion items={steps} />
       </Mobile>
       <Button margin="40px 0 0 0" bgWhite colorBlack border>
         Découvrir les offres <img src={arrowRightBlack} alt="" />

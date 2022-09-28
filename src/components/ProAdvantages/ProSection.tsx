@@ -1,8 +1,7 @@
 import { Wrapper, Section } from "./ProAdvantages.styled";
 import ProCard from "./ProCard";
 import { H4 } from "../helpers/Utils.styled";
-import proJSON from "../../data/pro-advantages.json";
-import { proAdvImages } from "../../assets/pro-advantages";
+import proAdvantages from "../../data/pro-advantages";
 
 export default function ProSection() {
   return (
@@ -12,8 +11,8 @@ export default function ProSection() {
           Le compte pro idéal pour gérer <br /> votre santé
         </H4>
         <div>
-          {proJSON.map((item) => {
-            return <ProCard key={item.id} {...item} icon={proAdvImages[item.image]}/>;
+          {proAdvantages.map((item) => {
+            return <ProCard key={item.id} {...item}/>;
           })}
         </div>
       </Section>

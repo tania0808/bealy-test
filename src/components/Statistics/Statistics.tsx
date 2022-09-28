@@ -2,7 +2,7 @@ import StatisticItem from "./StatisticItem";
 import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import { H4 } from "../helpers/Utils.styled";
-import statisticsJSON from "../../data/statistics.json";
+import statistics from "../../data/statistics";
 
 export default function Offers() {
 
@@ -13,7 +13,7 @@ export default function Offers() {
         <br /> des années futures
       </H4>
       <GridContainer>
-        {statisticsJSON.map((item) => {
+        {statistics.map((item) => {
           return <StatisticItem key={item.id} {...item} />;
         })}
       </GridContainer>

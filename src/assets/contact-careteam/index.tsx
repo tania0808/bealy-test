@@ -6,9 +6,8 @@ import mentalHealth from "./mentalHealth.svg";
 import teleconsultation from "./teleconsultation.svg";
 import treatment from "./treatment.svg";
 import wellBeing from "./wellBeing.svg";
-import ImageI from "../interface";
 
-export const contactCareTeamImages: ImageI = {
+export {
   assurance,
   checkSymptoms,
   healthIncreased,

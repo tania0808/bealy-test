@@ -5,8 +5,7 @@ import { ColoredSpan } from "../helpers/ColoredSpan";
 import { GridContainer } from "../helpers/GridContainer";
 import starDrawing from "../../assets/star-drawing.svg";
 import bealyAssurance from "../../assets/bealy-assurance.svg";
-import targetsJSON from "../../data/offer-targets.json";
-import { offerTargetsImages } from '../../assets/offer-targets/index';
+import targets from "../../data/offer-targets";
 
 export default function OfferTargets() {
 
@@ -23,8 +22,8 @@ export default function OfferTargets() {
           adaptées à vos besoins
         </H4>
         <GridContainer>
-          {targetsJSON.map((item) => {
-            return <TargetCard key={item.id} {...item} icon={offerTargetsImages[item.image]} />;
+          {targets.map((item) => {
+            return <TargetCard key={item.id} {...item} />;
           })}
         </GridContainer>
       </>
