@@ -42,12 +42,12 @@ export default function Testimonials() {
       </Mobile>
       <Desktop>
         <SectionCenter>
-          {testimonials.slice(0, 3).map((item, index) => {
+          {testimonials.slice(0, 3).map((item) => {
             return (
               <Item
                 {...item}
-                key={index}
-                margin={index % 2 !== 0 ? "20px" : 0}
+                key={item.id}
+                margin={item.id % 2 !== 0 ? "20px" : 0}
               />
             );
           })}

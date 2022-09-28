@@ -16,14 +16,14 @@ export default function Tabs({ items, onHandleClick, activeId }: TabProps) {
   return (
     <>
       <TabMenu>
-        {items.map((item: Tab, index: number) => {
+        {items.map((item: Tab) => {
           return (
             <TabItem
-              tabId={index}
+              tabId={item.id}
               activeId={activeId}
               key={item.id}
               onClick={() => {
-                onHandleClick(index);
+                onHandleClick(item.id);
               }}
             >
               <h5>{item.title}</h5>

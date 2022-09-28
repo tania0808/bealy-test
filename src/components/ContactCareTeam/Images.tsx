@@ -17,14 +17,14 @@ type Data = {
 export default function Images({ icons, width }: Data) {
   return (
     <>
-      {icons.map((icon: Icon, index: number) => {
+      {icons.map((icon: Icon) => {
         return (
           <IconBox
             topD={icon.topD}
             leftD={icon.leftD}
             topM={icon.topM}
             leftM={icon.leftM}
-            key={index}
+            key={icon.id}
             width={width}
           >
             <img

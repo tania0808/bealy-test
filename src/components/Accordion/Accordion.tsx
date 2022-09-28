@@ -13,9 +13,9 @@ interface AccordionItem {
 export default function Accordion({ items }: AccProps) {
   return (
     <>
-      {items.map((item: AccordionItem, index: number) => {
+      {items.map((item: AccordionItem) => {
         return (
-          <AccordionItem key={index} {...item} folder="health-assistance" />
+          <AccordionItem key={item.id} {...item} folder="health-assistance" />
         );
       })}
     </>

@@ -12,7 +12,7 @@ import healthAssistanceJSON from "../../data/health-assistance.json";
 
 export default function HealthAssistance() {
   const [healthAssistance] = useState(healthAssistanceJSON);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
 
   return (
     <FlexItem direction="column" align="start">
@@ -34,7 +34,7 @@ export default function HealthAssistance() {
           <CardImage margin="0 0 0 50px" cardWidth="70%" imageWidth="100%">
             <img
               src={`${import.meta.env.VITE_BASE_URL}assets/health-assistance/${
-                healthAssistance[value].image
+                healthAssistance[value - 1 ].image
               }.svg`}
               alt=""
             />

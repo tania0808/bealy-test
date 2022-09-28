@@ -13,7 +13,7 @@ interface ITabItem {
   tabId: number;
 }
 export const TabItem = styled.div<ITabItem>`
-margin-top: 10px;
+  margin-top: 10px;
   padding-left: 16px;
   border-left: 3px solid transparent;
   ${(props) => {
@@ -31,9 +31,9 @@ margin-top: 10px;
 
   & > h5 {
     margin-bottom: 8px;
-    color: ${({ theme}) => theme.colors.black_800};
+    color: ${({ theme }) => theme.colors.black_800};
   }
   & > p {
-    color: ${({ theme}) => theme.colors.black_600};
+    color: ${({ theme }) => theme.colors.black_600};
   }
 `;

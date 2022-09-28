@@ -12,7 +12,7 @@ import inscriptionStepsJSON from "../../data/inscription-steps.json";
 import { Desktop, Mobile } from "../helpers/Display.styled";
 
 export default function HealthAssistance() {
-  const [value, setValue] = useState<number>(0);
+  const [value, setValue] = useState<number>(1);
 
   return (
     <FlexItem direction="column" align="end" margin="200px 0 0">
@@ -28,7 +28,7 @@ export default function HealthAssistance() {
           <CardImage margin="0 50px 0 0" cardWidth="70%" imageWidth="100%">
             <img
               src={`${import.meta.env.VITE_BASE_URL}assets/inscription-steps/${
-                inscriptionStepsJSON[value].image
+                inscriptionStepsJSON[value - 1].image
               }.svg`}
               alt=""
             />
